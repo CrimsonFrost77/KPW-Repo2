@@ -1,5 +1,6 @@
 :root {
-  --color-navbar: rgba(0, 131, 76, 0.9);
+  --color-navbar-transparent: rgba(0, 131, 76, 0.9);
+  --color-navbar-solid: rgb(44, 156, 110);
   --height-navbar: 126px;
   --color-navbar-buttons: rgb(0, 167, 117);
 }
