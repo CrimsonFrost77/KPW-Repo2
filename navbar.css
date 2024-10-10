@@ -43,7 +43,7 @@ body{
   width: 125px; /* Set the width of the logo */
   height: 125px; /* Set the height of the logo */
   vertical-align: middle;
-  margin-left: 15%;
+  padding-left: 15%;
 }
 
 
