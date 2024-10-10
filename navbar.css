@@ -1,42 +1,4 @@
-:root {
-  --color-navbar: rgba(0, 131, 76, 0.9);
-  --height-navbar: 126px;
-  --color-navbar-buttons: rgb(0, 167, 117);
-}
 
-/**
-do we need this? not sure
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}*/
-
-body{
-  padding-top: var(--height-navbar);
-  padding-bottom: 1000px;/*testing*/
-}
-
-
-.body-section{
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white */
-  padding: 20px;
-  box-shadow: 
-        5px 0 10px -5px rgba(0, 0, 0, 0.1),
-        -5px 0 10px -5px rgba(0, 0, 0, 0.1),
-        0 5px 10px -5px rgba(0, 0, 0, 0.1);
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);box-shadow: 
-        5px 0 10px -5px rgba(0, 0, 0, 0.1),
-        -5px 0 10px -5px rgba(0, 0, 0, 0.1),
-        0 5px 10px -5px rgba(0, 0, 0, 0.1);
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
 
 /*Image logo in navbar css*/
 .navbar .imageSection .logoAtTop {
