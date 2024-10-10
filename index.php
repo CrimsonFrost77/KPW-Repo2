@@ -8,8 +8,8 @@
 		<title>Kaliakair Paurashava</title>
   </head>
   <body>
-    <div class="navbar-wrapper"><?php include 'navbar.html'; ?></div>
-    
+    <?php include 'navbar.html'; ?>
+
     <div class="body-section">
       <p>kotha</p><p>kotha</p><p>kotha</p><p>kotha</p><p>kotha</p>
       <p>kotha</p><p>kotha</p><p>kotha</p><p>kotha</p><p>kotha</p>

@@ -27,10 +27,10 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+/*make navbar bg solid when hovered*/
 .navbar-wrapper{
-  background-color: var(--color-navbar-transparent);
+  transition: background-color 0.3 ease;
 }
-
 .navbar-wrapper :hover {
   background-color: var(--color-navbar-solid);
 }
