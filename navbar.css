@@ -144,7 +144,11 @@
     flex-direction: row;
     width: auto;
     background-color: transparent;
+  }
 
+  .navigation-section .noDrop,
+  .navigation-section .dropdown .dropbtn{
+    font-size: 17px;
   }
 
   .navigation-section .noDrop,
