@@ -9,15 +9,6 @@
     <link rel="stylesheet" href="forms.css">
     <title>Simple Slideshow</title>
     <style>
-        /*body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }*/
         .slideshow-container {
             max-width: 800px;
             position: relative;
@@ -26,7 +17,7 @@
         .slide {
             display: none;
         }
-        img {
+        .slide img {
             width: 100%;
             height: auto;
         }
@@ -55,22 +46,25 @@
     </style>
 </head>
 <body>
-<?php include 'navbar.html'; ?>
-<?php include 'backGpic.php'; ?>
-    <div class="slideshow-container">
-    <!--Giving image a class-->
-        <div class="slide">
-            <img class="slideImg" src="Assets\Maps\Map_1_1.jpg" alt="Slide 1">
+    <?php include 'navbar.html'; ?>
+    <div class = "body-section">
+        <div class="slideshow-container">
+            <!--Giving image a class-->
+            <div class="slide">
+                <img class="slideImg" src="Assets\Maps\Map_1_1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img class="slideImg" src="Assets\Maps\Map_2_1.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img class="slideImg" src="/api/placeholder/800/600" alt="Slide 3">
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
         </div>
-        <div class="slide">
-            <img class="slideImg" src="Assets\Maps\Map_2_1.jpg" alt="Slide 2">
-        </div>
-        <div class="slide">
-            <img class="slideImg" src="/api/placeholder/800/600" alt="Slide 3">
-        </div>
-        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        
     </div>
+    
 
     <script>
         let slideIndex = 1;
