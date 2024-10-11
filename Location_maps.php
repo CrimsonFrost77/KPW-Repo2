@@ -84,5 +84,8 @@
             slides[slideIndex-1].style.display = "block";
         }
     </script>
+
+<script src="navbar.js"></script>
+
 </body>
 </html>
