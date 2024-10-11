@@ -7,6 +7,8 @@
   top: 0;
   z-index: 1000;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  transition: background-color 0.3s ease;
 }
 
 .navbar-content {
@@ -63,6 +65,8 @@
   border: none;
   font-size: 16px;
   cursor: pointer;
+
+  transition: background-color 0.4s ease;
 }
 
 .dropdown {
@@ -72,7 +76,7 @@
 .dropdown-content {
   display: none;
   width: 100%;
-  background-color: rgba(36, 161, 119, 0.74);
+  background-color: rgba(13, 83, 60, 0.74);
 }
 
 .dropdown.active .dropdown-content {
@@ -84,6 +88,8 @@
   color: white;
   text-decoration: none;
   display: block;
+
+  transition: background-color 0.3s ease;
 }
 
 .navigation-section a,
@@ -92,6 +98,10 @@
 }
 
 /* Hover effects */
+.navbar:hover{
+  background-color: var(--color-navbar-solid);
+}
+
 .navigation-section .noDrop:hover,
 .dropdown .dropbtn:hover,
 .dropdown-content a:hover {
@@ -100,6 +110,11 @@
 
 /* Desktop styles */
 @media screen and (min-width: 771px) {
+
+  .navbar{
+    height: var(--height-navbar);
+  }
+
   .navbar-content {
     flex-direction: row;
     align-items: center;
@@ -129,6 +144,7 @@
     flex-direction: row;
     width: auto;
     background-color: transparent;
+
   }
 
   .navigation-section .noDrop,
@@ -151,4 +167,6 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  
 }
