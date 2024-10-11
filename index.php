@@ -8,6 +8,9 @@
 		<title>Kaliakair Paurashava</title>
   </head>
   <body>
+
+  <!--adding navbar stuff using php-->
+  <!--note: add navbar.js before body end to make navbar.html function right-->
     <?php include 'navbar.html'; ?>
 
     <div class="body-section">
@@ -16,5 +19,6 @@
       <p>sroooooooooosdfsdfsgh s sd fs fs dfsfskotha</p>
     </div>
     
+    <script src="navbar.js"></script>
   </body>
 </html>

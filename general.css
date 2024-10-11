@@ -1,7 +1,7 @@
 :root {
   --color-navbar-transparent: rgba(0, 131, 76, 0.8);
   --color-navbar-solid: rgb(44, 156, 110);
-  --height-navbar: 126px;
+  --height-navbar: 125px;
   --color-navbar-buttons: rgb(0, 167, 117);
 }
 
@@ -15,7 +15,7 @@ do we need this? not sure
 */
 
 body{
-  padding-top: var(--height-navbar);
+  margin: var(--height-navbar) 0;
 
   /*bg image related css*/
   background-image: url('/Assets/simpleBackground2.webp');
@@ -23,7 +23,6 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin: 0;
   min-height: 100vh;
 }
 

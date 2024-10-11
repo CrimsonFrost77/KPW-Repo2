@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<div class="navbar-wrapper">
-  <div class="navbar">
-    <!--Logo stuff-->
+<nav class="navbar">
+  <div class="navbar-content">
     <div class="imageSection">
-      <img class="logoAtTop" src="Assets/KPLogo_white.png" alt="Kaliakair-pourashava-logo">
-      <h1 class="website_title">Kaliakair Pourashava</h1>
+      <img src="Assets/KPLogo_white.png" alt="Kaliakair-pourashava-logo" class="logoAtTop">
+      <h1 id="kaliakair-pourashava" class="website_title">Kaliakair Pourashava</h1>
+      <button id="hamburger" class="hamburger">☰</button>
     </div>
-  
-    <!--navigation stuff-->
-    <div class="navigation-section">
-      <!--links with no dropdown named noDrop-->
-      <!--Links with dropdown made as buttons with class dropbtn-->
-      <a class="noDrop" href="index.php">Home</a>
-      <a class="noDrop" href="Location_maps.php">About</a>
-      <a class="noDrop" href="#">Employees</a>
+    
+    <div id="navMenu" class="navigation-section">
+      <a href="index.php" class="noDrop">Home</a>
+      <a href="Location_maps.php" class="noDrop">About</a>
+      <a href="#" class="noDrop">Employees</a>
+      
       <div class="dropdown">
         <button class="dropbtn">Projects</button>
         <div class="dropdown-content">
@@ -22,6 +20,7 @@
           <a href="#">2022</a>
         </div>
       </div>
+      
       <div class="dropdown">
         <button class="dropbtn">Budgets</button>
         <div class="dropdown-content">
@@ -30,17 +29,9 @@
           <a href="#">2022</a>
         </div>
       </div>
-      <div class="dropdown">
-        <button class="dropbtn">Forms</button>
-        <div class="dropdown-content">
-          <a href="#">form1</a>
-          <a href="#">form2</a>
-          <a href="#">form3</a>
-        </div>
-      </div>
-      <a class="noDrop" href="#">Contacts</a>
+      <!-- Other dropdown menus... -->
       
+      <a href="#" class="noDrop">Contacts</a>
     </div>
-  
   </div>
-</div>
+</nav>
