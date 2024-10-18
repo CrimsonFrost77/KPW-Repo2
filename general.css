@@ -1,21 +1,22 @@
 :root {
+  --width-body-section: 1200px;
+  --height-navbar: 125px;
   --color-navbar-transparent: rgba(0, 131, 76, 0.8);
   --color-navbar-solid: rgb(44, 156, 110);
-  --height-navbar: 125px;
   --color-navbar-buttons: rgb(0, 167, 117);
 }
 
-/*
-do we need this? not sure
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-*/
+
 
 body{
-  margin: var(--height-navbar) 0;
+  margin-top: var(--height-navbar);
+  margin-bottom: 0;
 
   /*bg image related css*/
   background-image: url('/Assets/simpleBackground2.webp');
@@ -28,9 +29,9 @@ body{
 
 
 .body-section{
-  max-width: 1200px;
+  max-width: var(--width-body-section);
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.95); /* semi-transparent white */
   padding: 20px;
   
   box-shadow: 
@@ -39,8 +40,8 @@ body{
         0 5px 10px -5px rgba(0, 0, 0, 0.1);
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
 
-  padding-bottom: 20000px; /*test scrolling*/
+  /*padding-bottom: 2500px; /*test scrolling*/
   
 }
