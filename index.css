@@ -1,0 +1,8 @@
+.dynamic-header {
+  width: 100%;
+  height: 500px; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px; /* Add some space below the header */
+}

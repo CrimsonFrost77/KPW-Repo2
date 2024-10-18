@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="index.css">
 		<title>Kaliakair Paurashava</title>
   </head>
   <body>
@@ -16,6 +17,9 @@
     <?php include 'navbar.html'; ?>
 
     <div class="body-section">
+
+      <div id="dynamic-header" class="dynamic-header"></div>
+
       <p>kotha</p><p>kotha</p><p>kotha</p><p>kotha</p><p>kotha</p>
       <p>kotha</p><p>kotha</p><p>kotha</p><p>kotha</p><p>kotha</p>
       <p id="hello-line">hello this is a test line</p>
@@ -26,5 +30,6 @@
     <?php include 'footer.html'; ?>
 
     <script src="navbar.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
