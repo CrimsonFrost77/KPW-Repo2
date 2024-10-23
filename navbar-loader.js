@@ -42,3 +42,14 @@ async function loadNavbar() {
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', loadNavbar);
+
+/*icon tab*/
+function setFavicon(faviconUrl) {
+  const link = document.createElement('link');
+  link.rel = 'icon';
+  link.href = faviconUrl;
+  document.head.appendChild(link);
+}
+
+// Call the function with the path to the favicon
+setFavicon('Assets/tabicon.ico');
