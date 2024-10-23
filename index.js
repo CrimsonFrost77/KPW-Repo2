@@ -1,7 +1,7 @@
 const images = [
   'Assets/Kaliakoir_Pic1.png',
   'Assets/HighTEch.jpg',
-  'Assets/Kaliakoir rail .jpg'
+  'Assets/Kaliakoir rail.jpg'
 ];
 
 function setRandomHeaderImage() {
