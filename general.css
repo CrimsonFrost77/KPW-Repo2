@@ -27,7 +27,8 @@ body{
   min-height: 100vh;
 }
 
-
+/*Styles to make mid body section in a semi-transparent box*/
+/*this box contains the webpage's main content*/
 .body-section{
   max-width: var(--width-body-section);
   margin: 0 auto;
