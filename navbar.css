@@ -48,7 +48,7 @@
   text-shadow: 2px 2px 4px rgba(6, 2, 2, 0.5);
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 20px 0 20px 60px;
+  padding: 20px;
 }
 .header-container {
   background-color: #006400;
@@ -189,7 +189,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 125px;
   }
 
   .imageSection {
