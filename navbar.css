@@ -36,12 +36,13 @@
   width: 100px;
   height: 100px;
 }
+
 /* Website font fix*/
 .website_title {
-  font-size: 1.2rem;
+  font-size: 32px;
   margin: 0;
   font-family: 'Lora', serif;
-  font-size: 48px;
+  /*font-size: 48px;*/
   color: #FFFFFF;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(6, 2, 2, 0.5);
@@ -127,7 +128,7 @@
 }
 
 /* Desktop styles */
-@media screen and (min-width: 771px) {
+@media screen and (min-width: 805px) {
 
   .navbar{
     height: var(--height-navbar);
