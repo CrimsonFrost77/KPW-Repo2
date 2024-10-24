@@ -116,6 +116,8 @@
   text-decoration: none;
 }
 
+
+
 /* Hover effects */
 .navbar:hover{
   background-color: var(--color-navbar-solid);
@@ -124,8 +126,57 @@
 .navigation-section .noDrop:hover,
 .dropdown .dropbtn:hover,
 .dropdown-content a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(91, 221, 167, 0.767);
 }
+
+/* Language selector styles desktop*/
+.language-selector {
+  position: absolute;
+  top: var(--height-navbar);
+  right: 20px;
+  background-color: rgba(57, 175, 136, 0.548);
+  padding: 5px 15px;
+  border-radius: 0 0 4px 4px;
+  z-index: 999;
+}
+
+.language-toggle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+}
+
+.lang-btn {
+  color: white;
+  text-decoration: none;
+  padding: 2px 5px;
+  transition: opacity 0.3s ease;
+}
+
+.lang-btn:hover {
+  opacity: 0.8;
+}
+
+.lang-btn.active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.language-selector:hover{
+  background-color: rgb(57, 175, 136);;
+}
+
+/* Mobile responsive adjustments for lang selector */
+@media screen and (max-width: 804px) {
+    
+  .language-selector {
+    top: 120px; /* Adjust based on your mobile navbar height */
+  }
+  
+
+}
+
 
 /* Desktop styles */
 @media screen and (min-width: 805px) {
@@ -184,12 +235,15 @@
     top: 100%;
     left: 0;
     min-width: 160px;
-    z-index: 1;
+    z-index: 1000;
+  }
+
+  .dropdown-content a{
+    background-color: rgb(47, 133, 97);
   }
 
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
-  
 }
+

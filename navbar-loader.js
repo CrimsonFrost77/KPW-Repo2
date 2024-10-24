@@ -35,6 +35,11 @@ async function loadNavbar() {
       });
     });
 
+    // After setting up dropdown listeners, initialize language switcher
+    if (window.initializeLanguageSwitcher) {
+      initializeLanguageSwitcher();
+    }
+
   } catch (error) {
     console.error('Error loading navbar:', error);
   }
