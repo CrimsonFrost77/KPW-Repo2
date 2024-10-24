@@ -1,7 +1,9 @@
 const images = [
-  'Assets/Kaliakoir_Pic1.png',
-  'Assets/HighTEch.jpg',
-  'Assets/Kaliakoir rail.jpg'
+  'Assets/Picture/Kaliakoir_Pic1.png',
+  'Assets/Picture/Bangabandhu_hi_tech.png',
+  'Assets/Picture/Kaliakoir rail.jpg',
+  'Assets/Picture/Mokhosh_swamp2.png',
+  'Assets/Picture/ShreefaltaliCourtOfEstate.png',
 ];
 
 function setRandomHeaderImage() {
