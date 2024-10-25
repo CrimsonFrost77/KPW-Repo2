@@ -19,7 +19,7 @@ body{
   margin-bottom: 0;
 
   /*bg image related css*/
-  background-image: url('/Assets/web_2.jpg');
+  background-image: url('/Assets/artwork/web_2.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
