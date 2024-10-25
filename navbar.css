@@ -256,14 +256,14 @@
 
  /* Add a media query to gradually reduce margin as screen gets smaller */
  /* Movement range */
-@media screen and (min-width: 1000px) and (max-width: 1700px) {
+@media screen and (min-width: 1050px) and (max-width: 1700px) {
   .imageSection {
     margin-left: var(--navbar-logo-margin);
   }
 }
 
 /* When screen gets too small, remove margin completely */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
   .imageSection {
     margin-left: 0;
   }
