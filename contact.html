@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <style>
+        /* Basic styles for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Information</h1>
+
+    <!-- Table to display the CSV data -->
+    <table id="contact-table">
+        <thead>
+            <tr>
+                <!-- Add column headers as per your CSV file -->
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <!-- Add more headers if your CSV has additional columns -->
+            </tr>
+        </thead>
+        <tbody id="contact-table-body">
+            <!-- JavaScript will populate rows here -->
+        </tbody>
+    </table>
+
+    <!-- JavaScript to fetch and display data from the Node.js backend -->
+    <script>
+        fetch('/api/contact-info')
+            .then(response => response.json())
+            .then(data => {
+                let tableBody = document.getElementById('contact-table-body');
+                data.forEach(row => {
+                    let tr = document.createElement('tr');
+                    Object.values(row).forEach(value => {
+                        let td = document.createElement('td');
+                        td.innerText = value;
+                        tr.appendChild(td);
+                    });
+                    tableBody.appendChild(tr);
+                });
+            })
+            .catch(error => console.error('Error fetching contact data:', error));
+    </script>
+</body>
+</html>
