@@ -1,7 +1,7 @@
 const images = [
   'Assets/Picture/Kaliakoir_Pic1.webp',
   'Assets/Picture/Bangabandhu_hi_tech.webp',
-  'Assets/Picture/Kaliakoir rail.webp',
+  'Assets/Picture/Kaliakoir_rail.webp',
   'Assets/Picture/Mokhosh_swamp2.webp',
   'Assets/Picture/ShreefaltaliCourtOfEstate.webp',
 ];
