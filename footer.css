@@ -6,6 +6,9 @@
 
 .footer-container {
   max-width: var(--width-body-section);
+
+  min-width: var(--min-footer-width);
+  
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.9);/*Change with bg image later*/
   padding: 20px;
@@ -46,11 +49,6 @@
   margin: 5px;
 }
 
-/*Only for employee page */
-.employee-table-container + .site-footer .footer-container {
-  margin: 0 auto;
-  padding: 20px;
-}
 
 /* Desktop styles */
 @media screen and (min-width: 771px) {

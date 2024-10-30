@@ -1,5 +1,6 @@
 :root {
   --width-body-section: 1200px;
+  --min-footer-width: 630px;
   --height-navbar: 125px;
   --color-navbar-transparent: rgba(0, 131, 76, 0.8);
   --color-navbar-solid: rgb(44, 156, 110);
