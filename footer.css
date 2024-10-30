@@ -46,6 +46,12 @@
   margin: 5px;
 }
 
+/*Only for employee page */
+.employee-table-container + .site-footer .footer-container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
 /* Desktop styles */
 @media screen and (min-width: 771px) {
   .footer-content {
