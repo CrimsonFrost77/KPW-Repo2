@@ -92,7 +92,7 @@
 
 .info-card ul li a:active {
   color: #0270df; /* Darker shade on click */
-
+}
 
 @media (max-width: 770px) {
   .dynamic-header {
