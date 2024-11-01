@@ -20,7 +20,7 @@
   font-weight: bold;
   color: #003366;
   margin-bottom: 20px;
-  border-bottom: 3px solid #ffcc00;
+  border-bottom: 3px solid #0a642c;
   display: inline-block;
   padding-bottom: 10px;
 }
@@ -85,9 +85,9 @@
 }
 
 .info-card ul li a:hover {
-  color: #0b7734; /* Yellow hover effect to stand out */
+  color: #0b7734; /* Green hover effect to stand out */
   transform: translateX(5px); /* Slight right shift on hover */
-  border-bottom: 2px solid #0b7734; /* Yellow underline on hover */
+  border-bottom: 2px solid #0a642c; /* Green underline on hover */
 }
 
 .info-card ul li a:active {
