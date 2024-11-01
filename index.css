@@ -1,9 +1,22 @@
 /*Changing header image*/
 .dynamic-header {
   width: 100%;
-  height: 500px; /* Adjust the height as needed */
+  height: 50vh; /* Responsive height based on viewport */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 20px; /* Add some space below the header */
+  margin-bottom: 20px;
+  transition: height 0.3s ease; /* Smooth transition for responsiveness */
+}
+
+@media (max-width: 768px) {
+  .dynamic-header {
+    height: 30vh; /* Smaller height for mobile devices */
+  }
+}
+
+@media (min-width: 1200px) {
+  .dynamic-header {
+    height: 60vh; /* Larger height for larger screens */
+  }
 }

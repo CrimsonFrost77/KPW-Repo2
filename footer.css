@@ -6,8 +6,6 @@
 
 .footer-container {
   max-width: var(--width-body-section);
-
-  min-width: var(--min-footer-width);
   
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.9);/*Change with bg image later*/
@@ -47,6 +45,11 @@
 .footer-bottom img {
   height: 30px;
   margin: 5px;
+}
+
+/* target footer when it's within the same page as employee-table-container */
+.body-section:has(.employee-table-container) ~ .site-footer {
+  min-width: var(--min-footer-width);
 }
 
 
