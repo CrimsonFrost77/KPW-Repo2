@@ -1,6 +1,19 @@
+/* Style for the image above the footer */
+.footer-top-image {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-top-image img {
+  max-width: var(--width-body-section);
+  height: auto;
+  object-fit: contain;
+}
+
+/*Footer styles*/
 .site-footer {
   background-color: transparent;
-  padding: 20px 0;
+  padding:0;
   font-family: Arial, sans-serif;
 }
 
@@ -17,7 +30,6 @@
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: -20px;/*bruteforcing to remove gap with the body-section*/
   
 }
 
