@@ -1,4 +1,9 @@
 // footer-loader.js
+function getCurrentTimestamp() {
+  const now = new Date();
+  return now.toISOString().replace('T', ' ').slice(0, 19);
+}
+
 async function loadFooter() {
   try {
     // Fetch the footer HTML content
@@ -6,7 +11,13 @@ async function loadFooter() {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    const footerHTML = await response.text();
+    let footerHTML = await response.text();
+
+    // Replace the static timestamp with current time
+    footerHTML = footerHTML.replace(
+      /Last Updated: \d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/,
+      `Last Updated: ${getCurrentTimestamp()}`
+    );
 
     // Create footer container and insert content
     const footer = document.createElement('footer');
@@ -21,8 +32,6 @@ async function loadFooter() {
     footerImages.forEach(img => {
       img.onerror = function() {
         console.warn(`Failed to load footer image: ${img.src}`);
-        // Optionally hide the broken image
-        // img.style.display = 'none';
       };
     });
 
@@ -33,4 +42,3 @@ async function loadFooter() {
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', loadFooter);
-
