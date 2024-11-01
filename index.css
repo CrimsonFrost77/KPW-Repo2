@@ -9,7 +9,60 @@
   transition: height 0.3s ease; /* Smooth transition for responsiveness */
 }
 
-@media (max-width: 768px) {
+/*Info card styles*/
+.information-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.information-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 20px;
+}
+
+.info-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-icon {
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.info-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 770px) {
   .dynamic-header {
     height: 30vh; /* Smaller height for mobile devices */
   }
