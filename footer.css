@@ -85,3 +85,9 @@
     margin: 0 10px;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .footer-top-image img {
+    max-width: 100%;
+  }
+}
