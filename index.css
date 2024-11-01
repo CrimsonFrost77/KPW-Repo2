@@ -85,72 +85,14 @@
 }
 
 .info-card ul li a:hover {
-  color: #ffcc00; /* Yellow hover effect to stand out */
+  color: #0b7077; /* Yellow hover effect to stand out */
   transform: translateX(5px); /* Slight right shift on hover */
-  border-bottom: 2px solid #ffcc00; /* Yellow underline on hover */
+  border-bottom: 2px solid #0b7077; /* Yellow underline on hover */
 }
 
 .info-card ul li a:active {
-  color: #0066cc; /* Darker shade on click */
-}/* Styling for news links in the "News and Updates" card */
-.info-card ul {
-  list-style: none;
-  padding-left: 0;
-}
+  color: #0270df; /* Darker shade on click */
 
-.info-card ul li {
-  margin-bottom: 10px;
-}
-
-.info-card ul li a {
-  color: #003366; /* Dark blue to match theme */
-  font-size: 16px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease, transform 0.2s ease;
-  display: inline-block;
-  padding-bottom: 3px;
-  border-bottom: 2px solid transparent; /* Subtle underline effect */
-}
-
-.info-card ul li a:hover {
-  color: #08a072; /* Yellow hover effect to stand out */
-  transform: translateX(5px); /* Slight right shift on hover */
-  border-bottom: 2px solid #ffcc00; /* Yellow underline on hover */
-}
-
-.info-card ul li a:active {
-  color: #0066cc; /* Darker shade on click */
-}/* Styling for news links in the "News and Updates" card */
-.info-card ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.info-card ul li {
-  margin-bottom: 10px;
-}
-
-.info-card ul li a {
-  color: #003366; /* Dark blue to match theme */
-  font-size: 16px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease, transform 0.2s ease;
-  display: inline-block;
-  padding-bottom: 3px;
-  border-bottom: 2px solid transparent; /* Subtle underline effect */
-}
-
-.info-card ul li a:hover {
-  color: #ffcc00; /* Yellow hover effect to stand out */
-  transform: translateX(5px); /* Slight right shift on hover */
-  border-bottom: 2px solid #ffcc00; /* Yellow underline on hover */
-}
-
-.info-card ul li a:active {
-  color: #0066cc; /* Darker shade on click */
-}
 
 @media (max-width: 770px) {
   .dynamic-header {
