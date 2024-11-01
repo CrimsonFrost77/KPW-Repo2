@@ -32,3 +32,48 @@
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.9);
 }
+
+/*About Info Styles*/
+.info-card {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.info-card h2 {
+  background-color: #32a1a1;
+  color: #fff;
+  padding: 10px;
+  margin: -20px -20px 20px -20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.info-item {
+  padding: 10px;
+  background-color: #e0f7fa;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.info-item strong {
+  color: #006064;
+}
+
+@media (max-width: 600px) {
+  .info-grid {
+      grid-template-columns: 1fr;
+  }
+}
