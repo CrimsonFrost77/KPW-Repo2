@@ -114,7 +114,7 @@
 }
 
 .info-card ul li a:hover {
-  color: #ffcc00; /* Yellow hover effect to stand out */
+  color: #08a072; /* Yellow hover effect to stand out */
   transform: translateX(5px); /* Slight right shift on hover */
   border-bottom: 2px solid #ffcc00; /* Yellow underline on hover */
 }
