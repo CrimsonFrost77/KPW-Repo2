@@ -85,7 +85,11 @@ const translations = {
     'jahangir-alam': 'Md. Jahangir Alam',
     'manser-ali': 'Md. Manser Ali',
     'anwar-hossain': 'Md. Anwar Hossain',
-    'helal-uddin': 'Md. Helal Uddin'
+    'helal-uddin': 'Md. Helal Uddin',
+
+    //info card stuff
+    'find-info': 'Find Information',
+    'news-header':'News and Updates'
 
   },
   bn: {
@@ -171,7 +175,12 @@ const translations = {
     'jahangir-alam': 'মোঃ জাহাঙ্গীর আলম',
     'manser-ali': 'মোঃ মনছের আলী',
     'anwar-hossain': 'মোঃ আনোয়ার হোসেন',
-    'helal-uddin': 'মোঃ হেলাল উদ্দিন'
+    'helal-uddin': 'মোঃ হেলাল উদ্দিন',
+    
+    //info card stuff
+    'find-info': 'তথ্য',
+    'news-header':'সাম্প্রতিক খবর ও আপডেট'
+
   }
 };
 

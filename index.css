@@ -27,16 +27,16 @@
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
   gap: 20px;
 }
 
 .info-card {
   background-color: #f9f9f9;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: center;
   transition: transform 0.3s ease;
   min-height: 300px; /* Adjust the height as needed */
 }
@@ -54,7 +54,7 @@
 .info-card h3 {
   font-size: 18px;
   font-weight: bold;
-  color: #003366;
+  color: #0f2e4d;
   margin-bottom: 10px;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .info-card ul li a {
-  color: #003366; /* Dark blue to match theme */
+  color: #46719c; /* match theme */
   font-size: 16px;
   text-decoration: none;
   font-weight: 500;
@@ -85,13 +85,13 @@
 }
 
 .info-card ul li a:hover {
-  color: #0b7734; /* Green hover effect to stand out */
+  color: #358b24; /* Green hover effect to stand out */
   transform: translateX(5px); /* Slight right shift on hover */
-  border-bottom: 2px solid #0a642c; /* Green underline on hover */
+  border-bottom: 2px solid #11640a; /* Green underline on hover */
 }
 
 .info-card ul li a:active {
-  color: #0270df; /* Darker shade on click */
+  color: #096b00; /* Darker shade on click */
 }
 
 @media (max-width: 770px) {
@@ -103,5 +103,22 @@
 @media (min-width: 1200px) {
   .dynamic-header {
     height: 60vh; /* Larger height for larger screens */
+  }
+}
+
+/* Responsive info card for smaller screens */
+@media (max-width: 590px) {
+  .info-grid {
+    grid-template-columns: 1fr; /* Single-column layout */
+  }
+  
+  .info-card {
+    min-width: auto; /* Remove minimum width constraint */
+    width: 90%; /* Adjust to fit within the viewport comfortably */
+    margin: 0 auto; /* Center the cards */
+  }
+  
+  .info-card ul li a {
+    font-size: 15px; /* Slightly smaller font for better readability on small screens */
   }
 }
