@@ -5,7 +5,9 @@ Clean repo from kpw repo
 
 
 todo:
-  make footer
-  integrate translation
-  make auto img slider for homepage
+
+
+  rlabiba please fix logo - Assets\KPLogo_white.png
+    it has a white line on the left side
+  
   
