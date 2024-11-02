@@ -106,7 +106,23 @@ const translations = {
     'info-drain-network':'Drain Network:',
     'info-public-toilets':'Public Toilets:',
     'info-waste-bins':'Waste Collection Bins:',
-    'info-municipal-facilities':'Municipal Facilities:'
+    'info-municipal-facilities':'Municipal Facilities:',
+
+    // info card values for about page
+    'info-established-value':'2003 (2001)',
+    'info-class-value':'A',
+    'info-total-wards-value':'09',
+    'info-area-value':'28.02 sq. km',
+    'info-population-value':'700,000',
+    'info-holdings-value':'19150',
+    'info-tax-collected-value':'Tk 5,12,42,483 and 78% of collection',
+    'info-literacy-rate-value':'90.34%',
+    'info-density-value':'25000 p/sq.km',
+    'info-road-network-value':'270.0 km',
+    'info-drain-network-value':'252.0 km',
+    'info-public-toilets-value':'32',
+    'info-waste-bins-value':'24',
+    'info-municipal-facilities-value':'Market, Park, etc.'
   },
   bn: {
     'kaliakair-pourashava': 'কালিয়াকৈর পৌরসভা',
@@ -212,7 +228,23 @@ const translations = {
     'info-drain-network':'ড্রেন নেটওয়ার্ক',
     'info-public-toilets':'পাবলিক টয়লেট',
     'info-waste-bins':'বর্জ্য সংগ্রহ বিন',
-    'info-municipal-facilities':'পৌর সুবিধাসমূহ'
+    'info-municipal-facilities':'পৌর সুবিধাসমূহ',
+
+    // info card span values for about page (Bangla)
+    'info-established-value':'২০০৩ (২০০১)',
+    'info-class-value':'এ',
+    'info-total-wards-value':'০৯',
+    'info-area-value':'২৮.০২ বর্গ কিমি',
+    'info-population-value':'৭,০০,০০০',
+    'info-holdings-value':'১৯১৫০',
+    'info-tax-collected-value':'টাকা ৫,১২,৪২,৪৮৩ এবং সংগ্রহের ৭৮%',
+    'info-literacy-rate-value':'৯০.৩৪%',
+    'info-density-value':'২৫০০০ জন/বর্গ কিমি',
+    'info-road-network-value':'২৭০.০ কিমি',
+    'info-drain-network-value':'২৫২.০ কিমি',
+    'info-public-toilets-value':'৩২',
+    'info-waste-bins-value':'২৪',
+    'info-municipal-facilities-value':'বাজার, পার্ক ইত্যাদি'
 
   }
 };
