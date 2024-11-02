@@ -60,15 +60,16 @@ const translations = {
     'abdus-sabur-molla': 'Md. Abdus Sabur Molla',
     'shah-alam': 'Shah Alam Jamadar',
     'abdul-mannan': 'Md. Abdul Mannan',
-    'mint-sikdar': 'Md. Mint Sikdar',
+    'mintu-sikdar': 'Md. Mintu Sikdar',
     'farhad-hossain': 'Md. Farhad Hossain',
-    'mosaddekman-khan': 'Md. Mosaddekman Khan',
+    'masudujjaman-khan': 'Md. Masudujjaman Khan',
     'imdadul-haque': 'Md. Imdadul Haque',
     'anowar-mamun': 'Khandakar Anowar Mamun',
     'sulaiman-hossain': 'Md. Sulaiman Hossain',
     'tofazzal-hossain': 'Md. Tofazzal Hossain',
     'saiful-islam': 'Md. Saiful Islam',
     'shahidul-islam': 'Md. Shahidul Islam',
+    'barni-akter':'Barni Akter',
     'abdus-sattar': 'Md. Abdus Sattar',
     'mamun-hossain': 'Md. Mamun Hossain',
     'arif-hossain': 'Md. Arif Hossain',
@@ -77,9 +78,9 @@ const translations = {
     'rowshan-akter': 'Rowshan Akter Baby',
     'jhorna-akter': 'Jhorna Akter',
     'moktar-hossain': 'Md. Moktar Hossain',
-    'azahar-islam': 'Md. Azahar Islam',
+    'azaharul-islam': 'Md. Azaharul Islam',
     'hasina-akter': 'Hasina Akter',
-    'nur-amin': 'Md. Nur Amin',
+    'ruhul-amin': 'Md. Ruhul Amin',
     'nasirul-hassan': 'Md. Nasirul Hassan (Nanu)',
     'abdur-rahim': 'Md. Abdur Rahim Sarkar',
     'jahangir-alam': 'Md. Jahangir Alam',
@@ -122,7 +123,10 @@ const translations = {
     'info-drain-network-value':'252.0 km',
     'info-public-toilets-value':'32',
     'info-waste-bins-value':'24',
-    'info-municipal-facilities-value':'Market, Park, etc.'
+    'info-municipal-facilities-value':'Market, Park, etc.',
+
+    //maintenance page
+    'content-soon': 'Content Coming Soon'
   },
   bn: {
     'kaliakair-pourashava': 'কালিয়াকৈর পৌরসভা',
@@ -182,14 +186,15 @@ const translations = {
     'abdus-sabur-molla': 'মোঃ আব্দুস সবুর মোল্লা',
     'shah-alam': 'শাহ আলম জামাদার',
     'abdul-mannan': 'মোঃ আব্দুল মান্নান',
-    'mint-sikdar': 'মোঃ মিন্টু সিকদার',
+    'mintu-sikdar': 'মোঃ মিন্টু সিকদার',
     'farhad-hossain': 'মোঃ ফরহাদ হোসেন',
-    'mosaddekman-khan': 'মোঃ মোছাদ্দেকমান খান',
+    'masudujjaman-khan': 'মো: মাছুদুজ্জামান খান',
     'imdadul-haque': 'মোঃ ইমদাদুল হক',
     'anowar-mamun': 'খন্দকার আনোয়ার মামুন',
     'sulaiman-hossain': 'মোঃ সোলায়মান হোসেন',
     'tofazzal-hossain': 'মোঃ তোফাজ্জল হোসেন',
     'saiful-islam': 'মোঃ সাইফুল ইসলাম',
+    'barni-akter':'বার্নী আক্তার',
     'shahidul-islam': 'মোঃ শহিদুল ইসলাম',
     'abdus-sattar': 'মোঃ আব্দুস সাত্তার',
     'mamun-hossain': 'মোঃ মামুন হোসেন',
@@ -199,7 +204,7 @@ const translations = {
     'rowshan-akter': 'রওশন আক্তার বেবী',
     'jhorna-akter': 'ঝর্ণা আক্তার',
     'moktar-hossain': 'মোঃ মোক্তার হোসেন',
-    'azahar-islam': 'মোঃ আজহার ইসলাম',
+    'azaharul-islam': 'মোঃ আজহার ইসলাম',
     'hasina-akter': 'হাসিনা আক্তার',
     'nur-amin': 'মোঃ নুর আমিন',
     'nasirul-hassan': 'মোঃ নাসিরুল হাসান (নানু)',
@@ -244,7 +249,10 @@ const translations = {
     'info-drain-network-value':'২৫২.০ কিমি',
     'info-public-toilets-value':'৩২',
     'info-waste-bins-value':'২৪',
-    'info-municipal-facilities-value':'বাজার, পার্ক ইত্যাদি'
+    'info-municipal-facilities-value':'বাজার, পার্ক ইত্যাদি',
+
+    //maintenance page
+    'content-soon': 'কন্টেন্ট শীঘ্রই আসছে'
 
   }
 };

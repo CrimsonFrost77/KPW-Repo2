@@ -1,0 +1,15 @@
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 8em; /* Much larger font size for main text */
+  color: #056424;
+  margin-bottom: 40px;
+}
+
+.emoji {
+  font-size: 10em; /* Much larger font size for emoji */
+  color: #666;
+}
