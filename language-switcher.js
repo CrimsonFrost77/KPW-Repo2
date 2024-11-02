@@ -87,10 +87,26 @@ const translations = {
     'anwar-hossain': 'Md. Anwar Hossain',
     'helal-uddin': 'Md. Helal Uddin',
 
-    //info card stuff
+    //info card stuff for home page
     'find-info': 'Find Information',
-    'news-header':'News and Updates'
+    'news-header':'News and Updates',
 
+    //info card stuff for about page
+    'info-glance':'Pourashava At a Glance',
+    'info-established':'Established:',
+    'info-class':'Class:',
+    'info-total-wards':'Total Wards:',
+    'info-area':'Area:',
+    'info-population':'Population:',
+    'info-holdings':'No. of Holdings:',
+    'info-tax-collected':'Tax Collected:',
+    'info-literacy-rate':'Literacy Rate:',
+    'info-density':'Density:',
+    'info-road-network':'Road Network:',
+    'info-drain-network':'Drain Network:',
+    'info-public-toilets':'Public Toilets:',
+    'info-waste-bins':'Waste Collection Bins:',
+    'info-municipal-facilities':'Municipal Facilities:'
   },
   bn: {
     'kaliakair-pourashava': 'কালিয়াকৈর পৌরসভা',
@@ -179,7 +195,24 @@ const translations = {
     
     //info card stuff
     'find-info': 'তথ্য',
-    'news-header':'সাম্প্রতিক খবর ও আপডেট'
+    'news-header':'সাম্প্রতিক খবর ও আপডেট',
+
+    // info card stuff for about page
+    'info-glance':'এক নজরে পৌরসভা',
+    'info-established':'প্রতিষ্ঠিত',
+    'info-class':'শ্রেণী',
+    'info-total-wards':'মোট ওয়ার্ড',
+    'info-area':'এলাকা',
+    'info-population':'জনসংখ্যা',
+    'info-holdings':'হোল্ডিং সংখ্যা',
+    'info-tax-collected':'আদায়কৃত কর',
+    'info-literacy-rate':'সাক্ষরতার হার',
+    'info-density':'ঘনত্ব',
+    'info-road-network':'সড়ক নেটওয়ার্ক',
+    'info-drain-network':'ড্রেন নেটওয়ার্ক',
+    'info-public-toilets':'পাবলিক টয়লেট',
+    'info-waste-bins':'বর্জ্য সংগ্রহ বিন',
+    'info-municipal-facilities':'পৌর সুবিধাসমূহ'
 
   }
 };

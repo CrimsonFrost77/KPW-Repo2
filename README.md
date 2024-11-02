@@ -7,7 +7,7 @@ Clean repo from kpw repo
 todo:
 
 
-  rlabiba please fix logo - Assets\KPLogo_white.png
+  please fix logo - Assets\KPLogo_white.png
     it has a white line on the left side
   
   
