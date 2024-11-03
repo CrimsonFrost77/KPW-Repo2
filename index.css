@@ -1,18 +1,3 @@
-/* Reset some basic styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-  
-
-/* Body styling */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
-  line-height: 1.6;
-}
 
 /* Dynamic header */
 .dynamic-header {
@@ -25,81 +10,6 @@ body {
   transition: height 0.3s ease;
 }
 
-/* Container for main content */
-.container {
-  width: 80%;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Welcome section styles */
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 1.5rem;
-  background: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 2rem auto;
-}
-
-/* Image section styling */
-.image-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 250px;
-  margin: 0 auto;
-}
-
-.image-section img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Text section styling */
-.text-section {
-  flex: 1;
-}
-
-.text-section h1 {
-  font-size: 2rem;
-  color: #0056b3;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #0056b3;
-  text-align: center;
-  font-weight: bold;
-}
-
-.text-section p {
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-  padding: 1rem;
-  border-radius: 4px;
-}
-
-.text-section p:nth-child(2) {
-  background-color: #e9f2ff;
-  border-left: 4px solid #0056b3;
-}
-
-.text-section p:nth-child(3) {
-  background-color: #f7fafc;
-  border-left: 4px solid #d9534f;
-}
-
-.text-section p:nth-child(4) {
-  background-color: #e9f2ff;
-  border-left: 4px solid #0056b3;
-}
 
 /* Information section styles */
 .information-section {
@@ -186,41 +96,79 @@ body {
   color: #096b00;
 }
 
-/* Style for general links 
-a {
-  color: #0056b3;
-  text-decoration: none;
+/* Top content section styles */
+.top-content {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  background-color: #e9faff;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  align-items: flex-start;
 }
 
-a:hover {
-  text-decoration: underline;
+/* Image section styles */
+.image-section {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-*/
-/* Responsive styles */
-@media (min-width: 768px) {
-  .content {
-    flex-direction: row;
-    align-items: flex-start;
+
+.image-section img {
+  width: 85%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Text section styles */
+.text-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-section h1 {
+  color: #0066cc;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 10px;
+}
+
+.text-section p {
+  background-color: #f0f8ff; /* Light blue background for emphasis */
+  padding: 15px;
+  border-left: 4px solid red; 
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333; /* Dark text color for readability */
+  line-height: 1.6;
+}
+
+.text-section p:nth-child(4) {
+  border-left-color: #dc3545; 
+}
+
+.text-section p:nth-child(3) {
+  border-left-color: #1e90ff; /* Blue border for water bodies info */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .top-content {
+    flex-direction: column;
   }
 
   .image-section {
-    flex: 0 0 500px;
-    margin: 0;
+    flex: none;
+    width: 100%;
   }
 
   .text-section {
-    padding-left: 2rem;
-  }
-}
-
-@media (max-width: 770px) {
-  .dynamic-header {
-    height: 30vh;
-  }
-  
-  .container {
-    width: 95%;
-    padding: 15px;
+    padding: 20px 0;
   }
 }
 
