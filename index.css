@@ -116,8 +116,9 @@
 }
 
 .image-section img {
-  width: 85%;
+  width: 75%;
   height: auto;
+  margin-left: 10%;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -131,9 +132,10 @@
 
 .text-section h1 {
   color: #0066cc;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: bolder;
   margin-bottom: 20px;
-  border-bottom: 2px solid #0066cc;
+  border-bottom: 3px solid #0066cc;
   padding-bottom: 10px;
 }
 
@@ -157,7 +159,7 @@
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 805px) {
   .top-content {
     flex-direction: column-reverse;
     align-items: center;
