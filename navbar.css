@@ -225,6 +225,7 @@
 
   .navigation-section .noDrop,
   .navigation-section .dropdown .dropbtn{
+    height: 100%;
     font-size: 17px;
   }
 
