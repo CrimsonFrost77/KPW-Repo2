@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+  
 
 /* Body styling */
 body {
@@ -185,7 +186,7 @@ body {
   color: #096b00;
 }
 
-/* Style for general links */
+/* Style for general links 
 a {
   color: #0056b3;
   text-decoration: none;
@@ -194,7 +195,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+*/
 /* Responsive styles */
 @media (min-width: 768px) {
   .content {
