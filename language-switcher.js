@@ -3,7 +3,7 @@
 // Object to store translations
 const translations = {
   en: {
-    'kaliakair-pourashava': 'Kaliakair Pourashava',
+    'kaliakair-pourashava': 'Kaliakair Municipality',
     'home': 'Home',
     'about': 'About',
     'employees': 'Employees',
@@ -126,7 +126,16 @@ const translations = {
     'info-municipal-facilities-value':'Market, Park, etc.',
 
     //maintenance page
-    'content-soon': 'Content Coming Soon'
+    'content-soon': 'Content Coming Soon',
+    
+    'welcome-title': 'Welcome to Kaliakoir Municipality',
+    'welcome-intro': 'Established in 2003 (with its foundations set in 2001), Kaliakoir Municipality is designated as a Class A municipality, consisting of a total of 9 wards. Covering an area of 28.02 sq. km, it supports a population of approximately 700,000 people and includes 19,150 holdings.',
+    'welcome-geography': 'Geographically, Kaliakair is located at latitude 24.0750°N and longitude 90.2167°E. It is bordered by Mirzapur and Sakhipur upazilas to the north, Savar and Dhamrai upazilas to the south, Gazipur Sadar and Sreepur upazilas to the east, and Mirzapur upazila to the west.',
+    'welcome-rivers': 'The primary rivers in the area are Turag, Bangshi, and Salda. Other notable water bodies include Boali, Hawla, Ujan, and Markaj beels, along with the Goala and Betjuri canals.',
+
+
+
+
   },
   bn: {
     'kaliakair-pourashava': 'কালিয়াকৈর পৌরসভা',
@@ -252,7 +261,13 @@ const translations = {
     'info-municipal-facilities-value':'বাজার, পার্ক ইত্যাদি',
 
     //maintenance page
-    'content-soon': 'কন্টেন্ট শীঘ্রই আসছে'
+    'content-soon': 'কন্টেন্ট শীঘ্রই আসছে',
+
+    'welcome-title': 'কালিয়াকৈর পৌরসভায় স্বাগতম',
+    'welcome-intro': '২০০৩ সালে প্রতিষ্ঠিত (২০০১ সালে ভিত্তি স্থাপন), কালিয়াকৈর পৌরসভা একটি এ শ্রেণির পৌরসভা হিসেবে নির্ধারিত, যা মোট ৯টি ওয়ার্ড নিয়ে গঠিত। ২৮.০২ বর্গ কিলোমিটার এলাকা জুড়ে বিস্তৃত এই পৌরসভায় প্রায় ৭,০০,০০০ জনসংখ্যা বসবাস করে এবং ১৯,১৫০টি হোল্ডিং রয়েছে।',
+    'welcome-geography': 'ভৌগোলিকভাবে, কালিয়াকৈর ২৪.০৭৫০° উত্তর অক্ষাংশ এবং ৯০.২১৬৭° পূর্ব দ্রাঘিমাংশে অবস্থিত। এর উত্তরে মির্জাপুর ও শাখিপুর উপজেলা, দক্ষিণে সাভার ও ধামরাই উপজেলা, পূর্বে গাজীপুর সদর ও শ্রীপুর উপজেলা এবং পশ্চিমে মির্জাপুর উপজেলা দ্বারা সীমাবদ্ধ।',
+    'welcome-rivers': 'এলাকার প্রধান নদীগুলি হল তুরাগ, বংশী এবং সলদা। অন্যান্য উল্লেখযোগ্য জলাশয়গুলির মধ্যে রয়েছে বোয়ালী, হাওলা, উজান এবং মারকাজ বিল, সেই সাথে গোয়ালা ও বেতজুড়ি খাল।',
+
 
   }
 };
