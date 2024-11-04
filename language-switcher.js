@@ -8,7 +8,8 @@ const translations = {
     'about': 'About',
     'employeesAndMembers': 'Employees/Members',
     'projectsAndBudgets': 'Project/Budgets',
-    'noticesAndTenders': 'Notice/Tender',
+    'notices': 'Notice',
+    'tenders':'Tender',
     'contacts': 'Contacts',
     'forms': 'Forms',
 
@@ -141,7 +142,8 @@ const translations = {
     'employeesAndMembers': 'কর্মচারী/সদস্যবৃন্দ',
     'forms': 'ফর্ম',
     'projectsAndBudgets': 'প্রকল্প/বাজেট',
-    'noticesAndTenders': 'নোটিশ/টেন্ডার',
+    'notices': 'নোটিশ',
+    'tenders':'টেন্ডার',
     'contacts': 'যোগাযোগ',
 
     // Employee List Translations
