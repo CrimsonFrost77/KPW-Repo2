@@ -193,7 +193,7 @@
 
 
 /* Desktop styles */
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 926px) {
 
   .navbar{
     height: var(--height-navbar);

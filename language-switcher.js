@@ -10,10 +10,7 @@ const translations = {
     'projectsAndBudgets': 'Project/Budgets',
     'noticesAndTenders': 'Notice/Tender',
     'contacts': 'Contacts',
-    
-    'hello-line': 'Hello this is a test line',
-    'kotha-line': 'kotha \n kotha \n kotha',
-    'kpboast': 'kaliakair pauroshova is the best pouroshova',
+    'forms': 'Forms',
 
     // Employee List Translations
     'employee-list-title': 'Kaliakair Municipality Employee List',
@@ -142,6 +139,7 @@ const translations = {
     'home': 'হোম',
     'about': 'সম্পর্কে',
     'employeesAndMembers': 'কর্মচারী/সদস্যবৃন্দ',
+    'forms': 'ফর্ম',
     'projectsAndBudgets': 'প্রকল্প/বাজেট',
     'noticesAndTenders': 'নোটিশ/টেন্ডার',
     'contacts': 'যোগাযোগ',
