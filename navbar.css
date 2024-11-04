@@ -26,6 +26,8 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 10px;
+
+  margin: 0 auto;
 }
 
 .imageSection {
@@ -73,6 +75,8 @@
   width: 100%;
   flex-direction: column;
   background-color: var(--color-navbar-solid);
+
+  flex-wrap: nowrap; /* Prevent wrapping on smaller screens */
 }
 
 .navigation-section.show {
@@ -89,6 +93,11 @@
   border: none;
   font-size: 16px;
   cursor: pointer;
+
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: max-content; /* Ensure buttons don't shrink smaller than their content */
 
   transition: background-color 0.4s ease;
 }
@@ -184,7 +193,7 @@
 
 
 /* Desktop styles */
-@media screen and (min-width: 805px) {
+@media screen and (min-width: 860px) {
 
   .navbar{
     height: var(--height-navbar);
