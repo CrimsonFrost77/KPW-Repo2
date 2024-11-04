@@ -232,16 +232,6 @@
     background-color: transparent;
   }
 
-  .navigation-section .noDrop,
-  .navigation-section .dropdown .dropbtn{
-    height: 100%;
-    font-size: 15px;
-  }
-
-  .navigation-section .noDrop,
-  .dropdown .dropbtn {
-    padding: 20px 12px;
-  }
 
   .dropdown {
     position: relative;
@@ -277,4 +267,16 @@
   .imageSection {
     margin-left: 0;
   }
+  /*reduce font size and padding*/
+  .navigation-section .noDrop,
+  .navigation-section .dropdown .dropbtn{
+    height: 100%;
+    font-size: 14px;
+  }
+
+  .navigation-section .noDrop,
+  .dropdown .dropbtn {
+    padding: 20px 10px;
+  }
+
 }
