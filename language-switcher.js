@@ -6,9 +6,9 @@ const translations = {
     'kaliakair-pourashava': 'Kaliakair Municipality',
     'home': 'Home',
     'about': 'About',
-    'employees': 'Employees/Members',
-    'projects': 'Projects',
-    'budgets': 'Budgets',
+    'employeesAndMembers': 'Employees/Members',
+    'projectsAndBudgets': 'Project/Budgets',
+    'noticesAndTenders': 'Notice/Tender',
     'contacts': 'Contacts',
     
     'hello-line': 'Hello this is a test line',
@@ -141,13 +141,10 @@ const translations = {
     'kaliakair-pourashava': 'কালিয়াকৈর পৌরসভা',
     'home': 'হোম',
     'about': 'সম্পর্কে',
-    'employees': 'কর্মচারী/সদস্যবৃন্দ',
-    'projects': 'প্রকল্প',
-    'budgets': 'বাজেট',
+    'employeesAndMembers': 'কর্মচারী/সদস্যবৃন্দ',
+    'projectsAndBudgets': 'প্রকল্প/বাজেট',
+    'noticesAndTenders': 'নোটিশ/টেন্ডার',
     'contacts': 'যোগাযোগ',
-
-    'hello-line': 'হ্যালো এটি একটি পরীক্ষা লাইন',
-    'kpboast': 'সেরা পৌরোশোভা সহ কালিয়াকৈর পৌরোশোভা',
 
     // Employee List Translations
     'employee-list-title': 'কালিয়াকৈর পৌরসভা কর্মচারী তালিকা',

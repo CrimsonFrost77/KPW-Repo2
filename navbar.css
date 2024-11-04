@@ -55,7 +55,7 @@
   text-shadow: 2px 2px 4px rgba(6, 2, 2, 0.5);
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 20px;
+  padding: 15px;
 }
 .header-container {
   background-color: #006400;
@@ -235,12 +235,12 @@
   .navigation-section .noDrop,
   .navigation-section .dropdown .dropbtn{
     height: 100%;
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .navigation-section .noDrop,
   .dropdown .dropbtn {
-    padding: 20px 15px;
+    padding: 20px 12px;
   }
 
   .dropdown {
