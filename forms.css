@@ -9,6 +9,7 @@
 }
 .body-section{
   padding-top: 0;
+  padding-bottom: 100px;
 }
 
 .forms-container {
@@ -19,14 +20,6 @@
 
 .form-section {
   margin-bottom: 40px;
-}
-
-.section-title {
-  color: #0d3d35;
-  font-size: 24px;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #0d3d35;
-  margin-bottom: 20px;
 }
 
 .form-grid {
@@ -90,11 +83,7 @@
   }
 }
 
-@media (max-width: 480px) {
-  .section-title {
-      font-size: 20px;
-  }
-  
+@media (max-width: 480px) {  
   .form-title {
       font-size: 14px;
   }
