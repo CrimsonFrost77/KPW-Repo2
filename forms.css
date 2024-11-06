@@ -1,4 +1,3 @@
-
 .formsPageHeading {
   background: #0d3d35;
   color: #fff;
@@ -7,7 +6,7 @@
   padding-bottom: 30px;
   margin-top: 0;
 }
-.body-section{
+.body-section {
   padding-top: 0;
   padding-bottom: 100px;
 }
@@ -34,12 +33,12 @@
   padding: 15px;
   text-align: center;
   transition: transform 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .form-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .pdf-thumbnail {
@@ -79,12 +78,12 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .form-grid {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
-@media (max-width: 480px) {  
+@media (max-width: 480px) {
   .form-title {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
