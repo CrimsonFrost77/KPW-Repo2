@@ -134,7 +134,7 @@
   transform: scale(1.1);
 }
 
-/* Updated Modal styles for better click handling */
+/*Modal styles*/
 .project-modal {
   display: none;
   position: fixed;
@@ -167,19 +167,6 @@
   object-fit: contain;
   transform-origin: center;
   transition: transform 0.1s ease-out;
-}
-
-.modal-caption {
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-size: 1rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 1001; /* Ensure caption stays on top */
 }
 
 /* Zoom controls */
