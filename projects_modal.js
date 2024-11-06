@@ -160,28 +160,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const zoomControls = document.createElement("div");
   zoomControls.className = "zoom-controls";
   zoomControls.innerHTML = `
-        <button class="zoom-btn zoom-in">+</button>
-        <button class="zoom-btn zoom-out">−</button>
         <button class="zoom-btn zoom-reset">↺</button>
     `;
   modal.appendChild(zoomControls);
 
   // Zoom button functionality
-  const zoomIn = modal.querySelector(".zoom-in");
-  const zoomOut = modal.querySelector(".zoom-out");
   const zoomReset = modal.querySelector(".zoom-reset");
-
-  zoomIn.addEventListener("click", function (e) {
-    e.stopPropagation();
-    scale = Math.min(scale + ZOOM_SPEED, MAX_ZOOM);
-    updateTransform();
-  });
-
-  zoomOut.addEventListener("click", function (e) {
-    e.stopPropagation();
-    scale = Math.max(scale - ZOOM_SPEED, MIN_ZOOM);
-    updateTransform();
-  });
 
   zoomReset.addEventListener("click", function (e) {
     e.stopPropagation();

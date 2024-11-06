@@ -42,8 +42,8 @@
   right: 20px;
   width: 40px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(0, 75, 187, 0.2);
+  border: 1px solid rgba(31, 20, 190, 0.4);
   border-radius: 50%;
   color: white;
   font-size: 24px;
@@ -113,9 +113,6 @@
   position: absolute;
   bottom: 60px;
   right: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
   z-index: 1001;
 }
 
@@ -137,7 +134,6 @@
 .zoom-btn:hover {
   background: rgba(255, 255, 255, 0.3);
 }
-
 /* Text section styles */
 .text-section {
   padding: 20px;
@@ -166,7 +162,7 @@
   line-height: 1.6;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for intro stuff */
 @media (max-width: 768px) {
   .projects-intro-image img {
     width: 90%;
