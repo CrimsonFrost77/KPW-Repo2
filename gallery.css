@@ -81,14 +81,18 @@
   z-index: 1000;
   padding: 40px;
   cursor: pointer;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
   max-width: 90%;
   max-height: 90vh;
-  margin: auto;
-  display: block;
+
   object-fit: contain;
+  width: auto;
+  height: auto;
 }
 
 .modal-caption {
@@ -100,6 +104,18 @@
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
+}
+
+/* Add media queries for better modal mobile display */
+@media (max-width: 768px) {
+  .gallery-modal {
+    padding: 20px;
+  }
+
+  .modal-content {
+    max-width: 95%;
+    max-height: 80vh;
+  }
 }
 
 /* Responsive adjustments */
