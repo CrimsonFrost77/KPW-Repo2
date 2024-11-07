@@ -14,19 +14,35 @@
     <div class="body-section">
       <div class="gallery-container">
         <div class="gallery-title-container">
-          <h1 class="gallery-title" data-translate="photo-gallery">
+          <h1
+            id="photo-gallery"
+            class="gallery-title"
+            data-translate="photo-gallery"
+          >
             Photo Gallery
           </h1>
         </div>
 
         <div class="gallery-grid">
-          <!-- Municipal Building -->
           <div class="gallery-item">
             <img
               src="Assets/Picture/Kaliakoir_Pic1.webp"
               alt="Municipal Building"
             />
             <div class="gallery-caption">Municipal Building</div>
+            <div class="image-data" hidden>
+              <h2>Municipal Building</h2>
+              <p>
+                The main administrative building of Kaliakoir Municipality.
+                Built in 2003, this structure serves as the central hub for all
+                municipal operations and citizen services.
+              </p>
+              <div class="details">
+                <p>Location: Central Kaliakoir</p>
+                <p>Built: 2003</p>
+                <p>Architect: Mohammad Rahman</p>
+              </div>
+            </div>
           </div>
 
           <!-- Bangabandhu Hi-tech Park -->
@@ -36,6 +52,19 @@
               alt="Bangabandhu Hi-tech Park"
             />
             <div class="gallery-caption">Bangabandhu Hi-tech Park</div>
+            <div class="image-data" hidden>
+              <h2>Bangabandhu Hi-tech Park</h2>
+              <p>
+                Filler text: The main administrative building of Kaliakoir
+                Municipality. Built in 2003, this structure serves as the
+                central hub for all municipal operations and citizen services.
+              </p>
+              <div class="details">
+                <p>Location: Central Kaliakoir</p>
+                <p>Time: 2003</p>
+                <p>Captured By: Mohammad Rahman</p>
+              </div>
+            </div>
           </div>
 
           <!-- Kaliakair Railway Station -->
@@ -45,12 +74,38 @@
               alt="Kaliakair Railway Station"
             />
             <div class="gallery-caption">Kaliakair Railway Station</div>
+            <div class="image-data" hidden>
+              <h2>Kaliakair Railway Station</h2>
+              <p>
+                Filler text: The main administrative building of Kaliakoir
+                Municipality. Built in 2003, this structure serves as the
+                central hub for all municipal operations and citizen services.
+              </p>
+              <div class="details">
+                <p>Location: Central Kaliakoir</p>
+                <p>Time: 2003</p>
+                <p>Captured By: Mohammad Rahman</p>
+              </div>
+            </div>
           </div>
 
           <!-- Mokhosh Swamp -->
           <div class="gallery-item">
             <img src="Assets/Picture/Mokhosh_swamp.webp" alt="Mokhosh Swamp" />
             <div class="gallery-caption">Mokhosh Swamp</div>
+            <div class="image-data" hidden>
+              <h2>Mokhosh Swamp</h2>
+              <p>
+                Filler text: The main administrative building of Kaliakoir
+                Municipality. Built in 2003, this structure serves as the
+                central hub for all municipal operations and citizen services.
+              </p>
+              <div class="details">
+                <p>Location: Central Kaliakoir</p>
+                <p>Time: 2003</p>
+                <p>Captured By: Mohammad Rahman</p>
+              </div>
+            </div>
           </div>
 
           <!-- Shreefaltali Court -->
@@ -60,32 +115,93 @@
               alt="Shreefaltali Court"
             />
             <div class="gallery-caption">Shreefaltali Court</div>
+            <div class="image-data" hidden>
+              <h2>Shreefaltali Court</h2>
+              <p>
+                Filler text: The main administrative building of Kaliakoir
+                Municipality. Built in 2003, this structure serves as the
+                central hub for all municipal operations and citizen services.
+              </p>
+              <div class="details">
+                <p>Location: Central Kaliakoir</p>
+                <p>Time: 2003</p>
+                <p>Captured By: Mohammad Rahman</p>
+              </div>
+            </div>
           </div>
 
           <!-- Local Market -->
           <div class="gallery-item">
             <img src="Assets/simpleBackground.webp" alt="Local Market" />
             <div class="gallery-caption">Local Market</div>
+            <div class="image-data" hidden>
+              <h2>Local Market</h2>
+              <p>
+                Filler text: The main administrative building of Kaliakoir
+                Municipality. Built in 2003, this structure serves as the
+                central hub for all municipal operations and citizen services.
+              </p>
+              <div class="details">
+                <p>Location: Central Kaliakoir</p>
+                <p>Time: 2003</p>
+                <p>Captured By: Mohammad Rahman</p>
+              </div>
+            </div>
           </div>
 
           <!-- Community Center -->
           <div class="gallery-item">
             <img src="Assets/simpleBackground2.webp" alt="Community Center" />
             <div class="gallery-caption">Community Center</div>
+            <div class="image-data" hidden>
+              <h2>Community Center</h2>
+              <p>
+                Filler text: The main administrative building of Kaliakoir
+                Municipality. Built in 2003, this structure serves as the
+                central hub for all municipal operations and citizen services.
+              </p>
+              <div class="details">
+                <p>Location: Central Kaliakoir</p>
+                <p>Time: 2003</p>
+                <p>Captured By: Mohammad Rahman</p>
+              </div>
+            </div>
           </div>
 
           <!-- Public Park -->
           <div class="gallery-item">
             <img src="Assets/Picture/Mokhosh_swamp2.webp" alt="Public Park" />
             <div class="gallery-caption">Public Park</div>
+            <div class="image-data" hidden>
+              <h2>Public Park</h2>
+              <p>
+                Filler text: The main administrative building of Kaliakoir
+                Municipality. Built in 2003, this structure serves as the
+                central hub for all municipal operations and citizen services.
+              </p>
+              <div class="details">
+                <p>Location: Central Kaliakoir</p>
+                <p>Time: 2003</p>
+                <p>Captured By: Mohammad Rahman</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Modal for full-size image view -->
-      <div class="gallery-modal" id="imageModal">
-        <img class="modal-content" id="modalImage" />
-        <div class="modal-caption" id="modalCaption"></div>
+      <div id="imageModal" class="gallery-modal">
+        <button class="modal-close">&times;</button>
+        <div class="modal-container">
+          <div class="modal-image-container">
+            <img class="modal-content" />
+          </div>
+          <div class="modal-text-container">
+            <h2 class="modal-title"></h2>
+            <p class="modal-description"></p>
+            <div class="modal-details"></div>
+          </div>
+        </div>
       </div>
     </div>
 
