@@ -12,6 +12,9 @@ const translations = {
     tenders: "Tender",
     contacts: "Contacts",
     forms: "Forms",
+    more: "More",
+    tender: "Tenders",
+    photo_gallery: "Photo Gallery",
 
     // Employee List Translations
     "employee-list-title": "Kaliakair Municipality Employee List",
@@ -144,6 +147,10 @@ const translations = {
     notices: "নোটিশ",
     tenders: "টেন্ডার",
     contacts: "যোগাযোগ",
+    more: "অতিরিক্ত",
+    tender: "টেন্ডার",
+    photo_gallery: "ফটো গ্যালারি",
+
 
     // Employee List Translations
     "employee-list-title": "কালিয়াকৈর পৌরসভা কর্মচারী তালিকা",
@@ -266,6 +273,10 @@ const translations = {
       "ভৌগোলিকভাবে, কালিয়াকৈর ২৪.০৭৫০° উত্তর অক্ষাংশ এবং ৯০.২১৬৭° পূর্ব দ্রাঘিমাংশে অবস্থিত। এর উত্তরে মির্জাপুর ও শাখিপুর উপজেলা, দক্ষিণে সাভার ও ধামরাই উপজেলা, পূর্বে গাজীপুর সদর ও শ্রীপুর উপজেলা এবং পশ্চিমে মির্জাপুর উপজেলা দ্বারা সীমাবদ্ধ।",
     "welcome-rivers":
       "এলাকার প্রধান নদীগুলি হল তুরাগ, বংশী এবং সলদা। অন্যান্য উল্লেখযোগ্য জলাশয়গুলির মধ্যে রয়েছে বোয়ালী, হাওলা, উজান এবং মারকাজ বিল, সেই সাথে গোয়ালা ও বেতজুড়ি খাল।",
+
+
+  
+
   },
 };
 
