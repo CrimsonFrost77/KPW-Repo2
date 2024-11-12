@@ -1,277 +1,894 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kaliakair Municipality Employee List</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--general.css must be linked before other .css-->
-        <link rel="stylesheet" href="general.css">
-        <link rel="stylesheet" href="emplyee.css">
-        <link rel="stylesheet" href="navbar.css">
-        <link rel="stylesheet" href="footer.css">
-        
-        <title>Kaliakair Paurashava</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaliakair Municipality Employee List</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--general.css must be linked before other .css-->
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="emplyee.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
 
+    <title>Kaliakair Paurashava</title>
+  </head>
 
-    <body>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Municipality Employee List</title>
+        <link rel="stylesheet" href="employee.css" />
+      </head>
+      <body>
         <div class="body-section">
-            <div class="employee-table-container">
-                <h1 data-translate="employee-list-title">Kaliakair Municipality Employee List</h1>
-    
-                
-                <!-- General Branch -->
-                <div class="department">
-                    <div class="department-header" data-translate="general-branch">General Branch</div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th data-translate="name-header">Name</th>
-                                <th data-translate="designation-header">Designation</th>
-                                <th data-translate="mobile-header">Mobile</th>
-                                <th data-translate="education-header">Education</th>
-                                <th data-translate="joining-header">Joining Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-translate="nasir-uddin">Nasir Uddin</td>
-                                <td data-translate="head-assistant">Head Assistant</td>
-                                <td data-convert="mobile">01724936359</td>
-                                <td>M.Com</td>
-                                <td data-convert="date">-</td>
-                            </tr>
-                            <!-- ... other General Branch employees ... -->
-                        </tbody>
-                    </table>
-                </div>
-    
-                <!-- Accounts Branch -->
-                <div class="department">
-                    <div class="department-header" data-translate="accounts-branch">Accounts Branch</div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th data-translate="name-header">Name</th>
-                                <th data-translate="designation-header">Designation</th>
-                                <th data-translate="mobile-header">Mobile</th>
-                                <th data-translate="education-header">Education</th>
-                                <th data-translate="joining-header">Joining Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-translate="masudujjaman-khan">Md. Masudujjaman Khan</td>
-                                <td data-translate="accountant">Accountant</td>
-                                <td data-convert="mobile">01804340026</td>
-                                <td>M.S.S</td>
-                                <td data-convert="date">06/11/2003</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="imdadul-haque">Md. Imdadul Haque</td>
-                                <td data-translate="cashier">Cashier</td>
-                                <td data-convert="mobile">01721612056</td>
-                                <td>B.Com</td>
-                                <td data-convert="date">14/11/2006</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-    
-                <!-- Assessment Branch -->
-                <div class="department">
-                    <div class="department-header" data-translate="assessment-branch">Assessment Branch</div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th data-translate="name-header">Name</th>
-                                <th data-translate="designation-header">Designation</th>
-                                <th data-translate="mobile-header">Mobile</th>
-                                <th data-translate="education-header">Education</th>
-                                <th data-translate="joining-header">Joining Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-translate="anowar-mamun">Khandakar Anowar Mamun</td>
-                                <td data-translate="tax-assessor">Tax Assessor</td>
-                                <td data-convert="mobile">01818965702</td>
-                                <td>B.S.S</td>
-                                <td data-convert="date">-</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="sulaiman-hossain">Md. Sulaiman Hossain</td>
-                                <td data-translate="mlss">MLSS</td>
-                                <td data-convert="mobile">01712851055</td>
-                                <td>Class 8</td>
-                                <td data-convert="date">13/11/2006</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-    
-                <!-- Tax Collection/License Branch -->
-                <div class="department">
-                    <div class="department-header" data-translate="tax-license-branch">Tax Collection/License Branch</div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th data-translate="name-header">Name</th>
-                                <th data-translate="designation-header">Designation</th>
-                                <th data-translate="mobile-header">Mobile</th>
-                                <th data-translate="education-header">Education</th>
-                                <th data-translate="joining-header">Joining Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-translate="tofazzal-hossain">Md. Tofazzal Hossain</td>
-                                <td data-translate="tax-collector">Tax Collector</td>
-                                <td data-convert="mobile">01815485793</td>
-                                <td>B.Com (Honours)</td>
-                                <td data-convert="date">-</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="saiful-islam">Md. Saiful Islam</td>
-                                <td data-translate="assistant-tax-collector">Assistant Tax Collector</td>
-                                <td data-convert="mobile">01819473068</td>
-                                <td>M.A</td>
-                                <td data-convert="date">22/11/2005</td>
-                            </tr>
-                            <!-- ... other Tax Collection employees ... -->
-                        </tbody>
-                    </table>
-                </div>
-    
-                <!-- Health Department - Family Planning -->
-                <div class="department">
-                    <div class="department-header" data-translate="health-family-planning">Health Department - Family Planning</div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th data-translate="name-header">Name</th>
-                                <th data-translate="designation-header">Designation</th>
-                                <th data-translate="mobile-header">Mobile</th>
-                                <th data-translate="education-header">Education</th>
-                                <th data-translate="joining-header">Joining Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-translate="barni-akter">Barni Akter</td>
-                                <td data-translate="vaccination-supervisor">Vaccination Supervisor</td>
-                                <td data-convert="mobile">01718912470</td>
-                                <td>SSC</td>
-                                <td data-convert="date">08/11/2006</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="moktar-hossain">Md. Moktar Hossain</td>
-                                <td data-translate="vaccinator">Vaccinator-1</td>
-                                <td data-convert="mobile">01712202620</td>
-                                <td>HSC</td>
-                                <td data-convert="date">22/12/2005</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="azaharul-islam">Md. Azaharul Islam</td>
-                                <td data-translate="vaccinator">Vaccinator-2</td>
-                                <td data-convert="mobile">01721771750</td>
-                                <td>HSC</td>
-                                <td data-convert="date">14/11/2006</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="hasina-akter">Hasina Akter</td>
-                                <td data-translate="vaccinator">Vaccinator-3</td>
-                                <td data-convert="mobile">01720638010</td>
-                                <td>HSC</td>
-                                <td data-convert="date">14/11/2006</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="ruhul-amin">Md. Ruhul Amin</td>
-                                <td data-translate="vaccinator">Vaccinator-4</td>
-                                <td data-convert="mobile">01918690704</td>
-                                <td>SSC</td>
-                                <td data-convert="date">29/05/2012</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-    
-                <!-- Engineering Department -->
-                <div class="department">
-                    <div class="department-header" data-translate="engineering">Engineering Department</div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th data-translate="name-header">Name</th>
-                                <th data-translate="designation-header">Designation</th>
-                                <th data-translate="mobile-header">Mobile</th>
-                                <th data-translate="education-header">Education</th>
-                                <th data-translate="joining-header">Joining Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-translate="nasirul-hassan">Md. Nasirul Hassan (Namu)</td>
-                                <td data-translate="work-assistant">Work Assistant</td>
-                                <td data-convert="mobile">01818420883</td>
-                                <td>HSC</td>
-                                <td data-convert="date">04/11/2004</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="abdur-rahim">Md. Abdur Rahim Sarkar</td>
-                                <td data-translate="work-assistant">Work Assistant</td>
-                                <td data-convert="mobile">01824515642</td>
-                                <td>Class 8</td>
-                                <td data-convert="date">06/05/2010</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="jahangir-alam">Md. Jahangir Alam</td>
-                                <td data-translate="construction-assistant">Construction Assistant cum Typist</td>
-                                <td data-convert="mobile">01723664344</td>
-                                <td>HSC</td>
-                                <td data-convert="date">17/05/2011</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="monser-ali">Md. Monser Ali</td>
-                                <td data-translate="road-roller-driver">Road Roller Driver</td>
-                                <td data-convert="mobile">01712782141</td>
-                                <td>Class 8</td>
-                                <td data-convert="date">01/08/2006</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="anowar-hossain">Md. Anowar Hossain</td>
-                                <td data-translate="garbage-truck-driver">Garbage Truck Driver</td>
-                                <td data-convert="mobile">01715912224</td>
-                                <td>Class 8</td>
-                                <td data-convert="date">13/01/2008</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="helal-uddin">Md. Helal Uddin</td>
-                                <td data-translate="mlss">MLSS</td>
-                                <td data-convert="mobile">01813591090</td>
-                                <td>Class 8</td>
-                                <td data-convert="date">24/05/2012</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="arif-hossain-2">Md. Arif Hossain-2</td>
-                                <td data-translate="mlss">MLSS</td>
-                                <td data-convert="mobile">01923770631</td>
-                                <td>Class 8</td>
-                                <td data-convert="date">20/05/2012</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+          <div class="employee-table-container">
+            <h1
+              id="kaliakair-municipality-employee-list"
+              data-translate="employee-list-title"
+            >
+              Kaliakair Municipality Employee List
+            </h1>
+
+            <!-- Executive Officers -->
+            <div class="department">
+              <div
+                class="department-header"
+                data-translate="executive-officers"
+              >
+                Executive Officers
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th data-translate="header-name">Name</th>
+                    <th data-translate="header-designation">Designation</th>
+                    <th data-translate="header-mobile">Mobile</th>
+                    <th data-translate="header-education">Education</th>
+                    <th data-translate="header-joining">Joining Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-translate="jahidul-alam">
+                      Md. Jahidul Alam Talukdar
+                    </td>
+                    <td data-translate="municipal-executive">
+                      Municipal Executive Officer
+                    </td>
+                    <td data-convert="mobile" data-original="01704808086">
+                      01704808086
+                    </td>
+                    <td>M.Sc (Fisheries)</td>
+                    <td data-convert="date" data-original="01.06.2023">
+                      01.06.2023
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-translate="horipad-ray">Engr. Horipad Ray</td>
+                    <td data-translate="executive-engineer">
+                      Executive Engineer
+                    </td>
+                    <td data-convert="mobile" data-original="01714424343">
+                      01714424343
+                    </td>
+                    <td>B.Sc Engineering</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="arif-ul-islam">Md. Arif-Ul-Islam</td>
+                    <td data-translate="accounts-officer">Accounts Officer</td>
+                    <td data-convert="mobile" data-original="01833718433">
+                      01833718433
+                    </td>
+                    <td>B.Com</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="abdul-mottaleb">Abdul Mottaleb</td>
+                    <td data-translate="assistant-engineer">
+                      Assistant Engineer
+                    </td>
+                    <td data-convert="mobile" data-original="01913340033">
+                      01913340033
+                    </td>
+                    <td>B.Sc Engineering</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="mahmudul-hasan">Md. Mahmudul Hasan</td>
+                    <td data-translate="sub-engineer-civil">
+                      Sub-Assistant Engineer (Civil)
+                    </td>
+                    <td data-convert="mobile" data-original="01766458181">
+                      01766458181
+                    </td>
+                    <td>B.Sc Engineering</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="lucky-begum">Mahmuda Begum (Lucky)</td>
+                    <td data-translate="sub-engineer-electrical">
+                      Sub-Assistant Engineer (Electrical)
+                    </td>
+                    <td data-convert="mobile" data-original="01717642149">
+                      01717642149
+                    </td>
+                    <td>Diploma Engineering</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="biplab-hossen">Md. Biplab Hossen</td>
+                    <td data-translate="sub-engineer-civil">
+                      Sub-Assistant Engineer (Civil)
+                    </td>
+                    <td data-convert="mobile" data-original="01984232103">
+                      01984232103
+                    </td>
+                    <td>Diploma Engineering</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+
+            <!-- General Branch -->
+            <div class="department">
+              <div class="department-header" data-translate="general-branch">
+                General Branch
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th data-translate="header-name">Name</th>
+                    <th data-translate="header-designation">Designation</th>
+                    <th data-translate="header-mobile">Mobile</th>
+                    <th data-translate="header-education">Education</th>
+                    <th data-translate="header-joining">Joining Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-translate="nasir-uddin">Nasir Uddin</td>
+                    <td data-translate="chief-assistant">Chief Assistant</td>
+                    <td data-convert="mobile" data-original="01724936359">
+                      01724936359
+                    </td>
+                    <td>M.Com</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="sobur-molla">Md. Abdus Sobur Molla</td>
+                    <td data-translate="senior-assistant">Senior Assistant</td>
+                    <td data-convert="mobile" data-original="01721620951">
+                      01721620951
+                    </td>
+                    <td>B.A</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="moazzem-hossen">Md. Moazzem Hossen</td>
+                    <td data-translate="store-keeper">Store Keeper</td>
+                    <td data-convert="mobile" data-original="01728010916">
+                      01728010916
+                    </td>
+                    <td>B.A</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="jahangir-alam">Md. Jahangir Alam</td>
+                    <td data-translate="senior-assistant">Senior Assistant</td>
+                    <td data-convert="mobile" data-original="01723664344">
+                      01723664344
+                    </td>
+                    <td>H.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="saiful-islam">Md. Saiful Islam</td>
+                    <td data-translate="junior-assistant">
+                      Junior Assistant cum Typist
+                    </td>
+                    <td data-convert="mobile" data-original="01772541685">
+                      01772541685
+                    </td>
+                    <td>H.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="jahangir-alam-driver">
+                      Md. Jahangir Alam
+                    </td>
+                    <td data-translate="jeep-driver">Jeep Driver</td>
+                    <td data-convert="mobile" data-original="01788617207">
+                      01788617207
+                    </td>
+                    <td>Class 10</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="masud-rana">Masud Rana</td>
+                    <td data-translate="jeep-driver">Jeep Driver</td>
+                    <td data-convert="mobile" data-original="01758730325">
+                      01758730325
+                    </td>
+                    <td>S.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="sharmin-akter">Sharmin Akter</td>
+                    <td data-translate="office-assistant-mayor">
+                      Office Assistant (Mayor)
+                    </td>
+                    <td data-convert="mobile" data-original="01714639993">
+                      01714639993
+                    </td>
+                    <td>H.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="shah-alam">Md. Shah Alam Jomaddar</td>
+                    <td data-translate="office-assistant">Office Assistant</td>
+                    <td data-convert="mobile" data-original="01720363374">
+                      01720363374
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="abdul-mannan">Md. Abdul Mannan</td>
+                    <td data-translate="office-assistant">Office Assistant</td>
+                    <td data-convert="mobile" data-original="01734000023">
+                      01734000023
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="solayman-hossen">
+                      Md. Solayman Hossen
+                    </td>
+                    <td data-translate="office-assistant">Office Assistant</td>
+                    <td data-convert="mobile" data-original="01712851355">
+                      01712851355
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="abdullah-munsur">Abdullah Al Munsur</td>
+                    <td data-translate="office-assistant">Office Assistant</td>
+                    <td data-convert="mobile" data-original="01776634486">
+                      01776634486
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="khondokar-delowar">
+                      Khondokar Delowar Hossen
+                    </td>
+                    <td data-translate="office-assistant">Office Assistant</td>
+                    <td data-convert="mobile" data-original="01724088109">
+                      01724088109
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="forhad-hossen">Md. Forhad Hossen</td>
+                    <td data-translate="night-guard">Night Guard</td>
+                    <td data-convert="mobile" data-original="01818469351">
+                      01818469351
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="mamun-hossen">Md. Mamun Hossen</td>
+                    <td data-translate="night-guard">Night Guard</td>
+                    <td data-convert="mobile" data-original="01727267092">
+                      01727267092
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="shilpi-akter">Shilpi Akter</td>
+                    <td data-translate="office-assistant">Office Assistant</td>
+                    <td data-convert="mobile" data-original="01721523600">
+                      01721523600
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="asia-begum">Asia Begum</td>
+                    <td data-translate="office-assistant">Office Assistant</td>
+                    <td data-convert="mobile" data-original="01742856623">
+                      01742856623
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Tax Assessment Branch -->
+            <div class="department">
+              <div
+                class="department-header"
+                data-translate="tax-assessment-branch"
+              >
+                Tax Assessment Branch
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th data-translate="header-name">Name</th>
+                    <th data-translate="header-designation">Designation</th>
+                    <th data-translate="header-mobile">Mobile</th>
+                    <th data-translate="header-education">Education</th>
+                    <th data-translate="header-joining">Joining Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-translate="khondokar-anwarul">
+                      Khondokar Anwarul Mamun
+                    </td>
+                    <td data-translate="tax-assessor">Tax Assessor</td>
+                    <td data-convert="mobile" data-original="01818965702">
+                      01818965702
+                    </td>
+                    <td>B.S.S</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="selim-hossen">Md. Selim Hossen</td>
+                    <td data-translate="assistant-tax-assessor">
+                      Assistant Tax Assessor
+                    </td>
+                    <td data-convert="mobile" data-original="01766632271">
+                      01766632271
+                    </td>
+                    <td>B.A</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Tax Collection and License Branch -->
+            <div class="department">
+              <div
+                class="department-header"
+                data-translate="tax-license-branch"
+              >
+                Tax Collection and License Branch
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th data-translate="header-name">Name</th>
+                    <th data-translate="header-designation">Designation</th>
+                    <th data-translate="header-mobile">Mobile</th>
+                    <th data-translate="header-education">Education</th>
+                    <th data-translate="header-joining">Joining Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-translate="tofazzal-hossen">
+                      Md. Tofazzal Hossen
+                    </td>
+                    <td data-translate="tax-collector">Tax Collector</td>
+                    <td data-convert="mobile" data-original="01815485793">
+                      01815485793
+                    </td>
+                    <td>B.Com (Honours)</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="abdus-sattar">Md. Abdus Sattar</td>
+                    <td data-translate="license-inspector">
+                      License Inspector
+                    </td>
+                    <td data-convert="mobile" data-original="01818192512">
+                      01818192512
+                    </td>
+                    <td>B.A</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="saiful-islam-tax">Md. Saiful Islam</td>
+                    <td data-translate="assistant-tax-collector">
+                      Assistant Tax Collector
+                    </td>
+                    <td data-convert="mobile" data-original="01819473068">
+                      01819473068
+                    </td>
+                    <td>M.A</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="shahidul-islam">Md. Shahidul Islam</td>
+                    <td data-translate="assistant-tax-collector">
+                      Assistant Tax Collector
+                    </td>
+                    <td data-convert="mobile" data-original="01718434806">
+                      01718434806
+                    </td>
+                    <td>B.A</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="mosaraf-hossen">Md. Mosaraf Hossen</td>
+                    <td data-translate="assistant-tax-collector">
+                      Assistant Tax Collector
+                    </td>
+                    <td data-convert="mobile" data-original="01719867582">
+                      01719867582
+                    </td>
+                    <td>B.S.S</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="robin-hossen">Md. Robin Hossen</td>
+                    <td data-translate="assistant-license-inspector">
+                      Assistant License Inspector
+                    </td>
+                    <td data-convert="mobile" data-original="01794799156">
+                      01794799156
+                    </td>
+                    <td>B.S.S</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Accounts Branch -->
+            <div class="department">
+              <div class="department-header" data-translate="accounts-branch">
+                Accounts Branch
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th data-translate="header-name">Name</th>
+                    <th data-translate="header-designation">Designation</th>
+                    <th data-translate="header-mobile">Mobile</th>
+                    <th data-translate="header-education">Education</th>
+                    <th data-translate="header-joining">Joining Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-translate="isdadul-haque">Md. Isdadul Haque</td>
+                    <td data-translate="treasurer">Treasurer</td>
+                    <td data-convert="mobile" data-original="01721612056">
+                      01721612056
+                    </td>
+                    <td>B.Com</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="fahadil-khalid">Fahadil Khalid</td>
+                    <td data-translate="accounts-assistant">
+                      Accounts Assistant
+                    </td>
+                    <td data-convert="mobile" data-original="01679522262">
+                      01679522262
+                    </td>
+                    <td>B.Com</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Market Collection Branch -->
+            <div class="department">
+              <div
+                class="department-header"
+                data-translate="market-collection-branch"
+              >
+                Market Collection Branch
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th data-translate="header-name">Name</th>
+                    <th data-translate="header-designation">Designation</th>
+                    <th data-translate="header-mobile">Mobile</th>
+                    <th data-translate="header-education">Education</th>
+                    <th data-translate="header-joining">Joining Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-translate="arif-hossen">Md. Arif Hossen</td>
+                    <td data-translate="market-inspector">Market Inspector</td>
+                    <td data-convert="mobile" data-original="01719603521">
+                      01719603521
+                    </td>
+                    <td>B.A</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="imrul-hasan">Md. Imrul Hasan Sumon</td>
+                    <td data-translate="collector">Collector</td>
+                    <td data-convert="mobile" data-original="01843590723">
+                      01843590723
+                    </td>
+                    <td>B.A</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Civil/Electrical/Mechanical Branch -->
+            <div class="department">
+              <div class="department-header" data-translate="engineering">
+                Civil/Electrical/Mechanical Branch
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th data-translate="header-name">Name</th>
+                    <th data-translate="header-designation">Designation</th>
+                    <th data-translate="header-mobile">Mobile</th>
+                    <th data-translate="header-education">Education</th>
+                    <th data-translate="header-joining">Joining Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-translate="jonny-ahmed">Md. Jonny Ahmed</td>
+                    <td data-translate="surveyor">Surveyor/Sub-Overseer</td>
+                    <td data-convert="mobile" data-original="01722444437">
+                      01722444437
+                    </td>
+                    <td>Diploma Engineering</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="nasir-ul-hasan">
+                      Md. Nasir Ul Hasan (Nannu)
+                    </td>
+                    <td data-translate="work-assistant">Work Assistant</td>
+                    <td data-convert="mobile" data-original="01818420883">
+                      01818420883
+                    </td>
+                    <td>H.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="rajib-khan">Md. Rajib Khan</td>
+                    <td data-translate="work-assistant">Work Assistant</td>
+                    <td data-convert="mobile" data-original="01734881283">
+                      01734881283
+                    </td>
+                    <td>S.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="ferdous-ur-rahman">
+                      Md. Ferdous Ur Rahman
+                    </td>
+                    <td data-translate="work-assistant">Work Assistant</td>
+                    <td data-convert="mobile" data-original="01821525620">
+                      01821525620
+                    </td>
+                    <td>H.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="istiak-ahammed">
+                      Md. Istiak Ahammed Asad
+                    </td>
+                    <td data-translate="work-assistant">Work Assistant</td>
+                    <td data-convert="mobile" data-original="01715280522">
+                      01715280522
+                    </td>
+                    <td>B.A</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="arif-hossen">Md. Arif Hossen</td>
+                    <td data-translate="street-light-inspector">
+                      Street Light Inspector
+                    </td>
+                    <td data-convert="mobile" data-original="01729545765">
+                      01729545765
+                    </td>
+                    <td>B.A</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="monser-ali">Md. Monser Ali</td>
+                    <td data-translate="road-roller-driver">
+                      Road Roller Driver
+                    </td>
+                    <td data-convert="mobile" data-original="01712782941">
+                      01712782941
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="malek">A. Malek</td>
+                    <td data-translate="road-roller-driver">
+                      Road Roller Driver
+                    </td>
+                    <td data-convert="mobile" data-original="01843746925">
+                      01843746925
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="anwar-hossain">Md. Anowar Hossen</td>
+                    <td data-translate="garbage-truck-driver">
+                      Garbage Truck Driver
+                    </td>
+                    <td data-convert="mobile" data-original="01715912224">
+                      01715912224
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="sohel">Md. Sohel</td>
+                    <td data-translate="garbage-truck-driver">
+                      Garbage Truck Driver
+                    </td>
+                    <td data-convert="mobile" data-original="01727640888">
+                      01727640888
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="masum-hossen">Masum Hossen</td>
+                    <td data-translate="truck-driver">Truck/Tractor Driver</td>
+                    <td data-convert="mobile" data-original="01870462281">
+                      01870462281
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="wasim-mia">Md. Wasim Mia</td>
+                    <td data-translate="mixture-operator">
+                      Mixture Machine Operator
+                    </td>
+                    <td data-convert="mobile" data-original="01727513058">
+                      01727513058
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="pavel-ahammed">Pavel Ahammed</td>
+                    <td data-translate="pump-operator">Pump Operator</td>
+                    <td data-convert="mobile" data-original="01707622961">
+                      01707622961
+                    </td>
+                    <td>S.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="mostofa">Md. Mostofa</td>
+                    <td data-translate="pump-operator">Pump Operator</td>
+                    <td data-convert="mobile" data-original="01793760227">
+                      01793760227
+                    </td>
+                    <td>S.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="khorshed-alam">Khorshed Alam</td>
+                    <td data-translate="lineman">Lineman</td>
+                    <td data-convert="mobile" data-original="01729604062">
+                      01729604062
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="syed-asaduzzaman">Syed Asaduzzaman</td>
+                    <td data-translate="electrical-helper">
+                      Electrical Helper
+                    </td>
+                    <td data-convert="mobile" data-original="01712532492">
+                      01712532492
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="kamal-hossen">Md. Kamal Hossen</td>
+                    <td data-translate="electrical-helper">
+                      Electrical Helper
+                    </td>
+                    <td data-convert="mobile" data-original="01713504423">
+                      01713504423
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="helal-uddin">Md. Helal Uddin</td>
+                    <td data-translate="office-assistant">Office Assistant</td>
+                    <td data-convert="mobile" data-original="01813591390">
+                      01813591390
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="arif-hossen-2">Md. Arif Hossen-2</td>
+                    <td data-translate="office-assistant">Office Assistant</td>
+                    <td data-convert="mobile" data-original="01923730631">
+                      01923730631
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="sobur-molla">Md. Abdus Sobur</td>
+                    <td data-translate="office-assistant">Office Assistant</td>
+                    <td data-convert="mobile" data-original="01739895180">
+                      01739895180
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Health and Family Planning Branch -->
+            <div class="department">
+              <div
+                class="department-header"
+                data-translate="health-family-planning"
+              >
+                Health and Family Planning Branch
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th data-translate="header-name">Name</th>
+                    <th data-translate="header-designation">Designation</th>
+                    <th data-translate="header-mobile">Mobile</th>
+                    <th data-translate="header-education">Education</th>
+                    <th data-translate="header-joining">Joining Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-translate="wasim-arafat">Wasim Arafat</td>
+                    <td data-translate="health-assistant">Health Assistant</td>
+                    <td data-convert="mobile" data-original="01782719244">
+                      01782719244
+                    </td>
+                    <td>H.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="jhorna-akter">Jhorna Akter</td>
+                    <td data-translate="vaccination-supervisor">
+                      Vaccination Supervisor
+                    </td>
+                    <td data-convert="mobile" data-original="01718912970">
+                      01718912970
+                    </td>
+                    <td>S.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="moktar-hossen">Md. Moktar Hossen</td>
+                    <td data-translate="vaccination-supervisor">
+                      Vaccination Supervisor
+                    </td>
+                    <td data-convert="mobile" data-original="01712232620">
+                      01712232620
+                    </td>
+                    <td>H.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="hasina-akter">Hasina Akter</td>
+                    <td data-translate="vaccinator">Vaccinator</td>
+                    <td data-convert="mobile" data-original="01720638010">
+                      01720638010
+                    </td>
+                    <td>H.S.C</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="sourav-hossen">
+                      Khondokar Sourav Hossen
+                    </td>
+                    <td data-translate="vaccinator">Vaccinator</td>
+                    <td data-convert="mobile" data-original="01720156262">
+                      01720156262
+                    </td>
+                    <td>H.S.C</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Cleanliness Branch -->
+            <div class="department">
+              <div
+                class="department-header"
+                data-translate="cleanliness-branch"
+              >
+                Cleanliness Branch
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th data-translate="header-name">Name</th>
+                    <th data-translate="header-designation">Designation</th>
+                    <th data-translate="header-mobile">Mobile</th>
+                    <th data-translate="header-education">Education</th>
+                    <th data-translate="header-joining">Joining Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-translate="rowshan-akter">Rowshan Akter Ruby</td>
+                    <td data-translate="conservancy-inspector">
+                      Conservancy Inspector
+                    </td>
+                    <td data-convert="mobile" data-original="01726621446">
+                      01726621446
+                    </td>
+                    <td>B.A</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="abu-taher">Khondokar Abu Taher</td>
+                    <td data-translate="supervisor">Supervisor</td>
+                    <td data-convert="mobile" data-original="01915400413">
+                      01915400413
+                    </td>
+                    <td>B.A</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td data-translate="arif-hossen-1">Md. Arif Hossen-1</td>
+                    <td data-translate="office-assistant">Office Assistant</td>
+                    <td data-convert="mobile" data-original="01767342535">
+                      01767342535
+                    </td>
+                    <td>Class 8</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-        
+
         <script src="footer-loader.js"></script>
         <script src="navbar-loader.js"></script>
         <script src="language-switcher.js"></script>
-
-
-    </body>
+      </body>
+    </html>
+  </body>
 </html>

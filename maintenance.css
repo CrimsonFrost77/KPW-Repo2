@@ -1,4 +1,3 @@
-
 .container {
   text-align: center;
   padding-top: 20vh;
@@ -19,20 +18,20 @@ h1 {
 /* Adjust font sizes for smaller screens */
 @media (max-width: 768px) {
   h1 {
-      font-size: 5em; /* Smaller font size for medium screens */
+    font-size: 5em; /* Smaller font size for medium screens */
   }
 
   .emoji {
-      font-size: 7em; /* Smaller emoji size for medium screens */
+    font-size: 7em; /* Smaller emoji size for medium screens */
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-      font-size: 3em; /* Smaller font size for small screens */
+    font-size: 3em; /* Smaller font size for small screens */
   }
 
   .emoji {
-      font-size: 5em; /* Smaller emoji size for small screens */
+    font-size: 5em; /* Smaller emoji size for small screens */
   }
 }

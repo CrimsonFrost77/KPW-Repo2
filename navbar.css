@@ -1,4 +1,4 @@
-:root{
+:root {
   --navbar-logo-margin: calc(100px - ((1700px - 100vw) / 5.5));
 }
 
@@ -16,7 +16,7 @@
 }
 
 /*navigation top clickable header "kaliakair-pourashava"*/
-.navbar-content a{
+.navbar-content a {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
@@ -48,9 +48,9 @@
 .website_title {
   font-size: 32px;
   margin: 0;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   /*font-size: 48px;*/
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(6, 2, 2, 0.5);
   font-weight: 700;
@@ -103,13 +103,14 @@
 }
 
 .dropdown {
+  position: relative;
   width: 100%;
 }
 
 .dropdown-content {
   display: none;
   width: 100%;
-  background-color: rgba(13, 83, 60, 0.74);
+  background-color: rgba(22, 134, 97, 0.74);
 }
 
 .dropdown.active .dropdown-content {
@@ -121,7 +122,7 @@
   color: white;
   text-decoration: none;
   display: block;
-
+  white-space: nowrap;
   transition: background-color 0.3s ease;
 }
 
@@ -130,10 +131,8 @@
   text-decoration: none;
 }
 
-
-
 /* Hover effects */
-.navbar:hover{
+.navbar:hover {
   background-color: var(--color-navbar-solid);
 }
 
@@ -177,25 +176,20 @@
   border-bottom: 2px solid white;
 }
 
-.language-selector:hover{
-  background-color: rgb(57, 175, 136);;
+.language-selector:hover {
+  background-color: rgb(57, 175, 136);
 }
 
 /* Mobile responsive adjustments for lang selector */
 @media screen and (max-width: 804px) {
-    
   .language-selector {
     top: 137px; /* Adjust based on your mobile navbar height */
   }
-  
-
 }
 
-
 /* Desktop styles */
-@media screen and (min-width: 926px){
-
-  .navbar{
+@media screen and (min-width: 926px) {
+  .navbar {
     height: var(--height-navbar);
   }
 
@@ -232,7 +226,6 @@
     background-color: transparent;
   }
 
-
   .dropdown {
     position: relative;
   }
@@ -241,12 +234,18 @@
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 160px;
+    min-width: max-content;
     z-index: 1000;
+
+    /* Center the dropdown relative to its parent */
+    left: 70%;
+    transform: translateX(-70%);
+    /* Add some padding to prevent text touching edges */
   }
 
-  .dropdown-content a{
+  .dropdown-content a {
     background-color: rgb(47, 133, 97);
+    white-space: nowrap;
   }
 
   .dropdown:hover .dropdown-content {
@@ -254,8 +253,8 @@
   }
 }
 
- /* Add a media query to gradually reduce margin as screen gets smaller */
- /* Movement range */
+/* Add a media query to gradually reduce margin as screen gets smaller */
+/* Movement range */
 @media screen and (min-width: 1050px) and (max-width: 1700px) {
   .imageSection {
     margin-left: var(--navbar-logo-margin);
@@ -269,7 +268,7 @@
   }
   /*reduce font size and padding*/
   .navigation-section .noDrop,
-  .navigation-section .dropdown .dropbtn{
+  .navigation-section .dropdown .dropbtn {
     height: 100%;
     font-size: 14px;
   }
@@ -278,5 +277,4 @@
   .dropdown .dropbtn {
     padding: 20px 10px;
   }
-
 }

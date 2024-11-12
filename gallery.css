@@ -80,27 +80,108 @@
   background: rgba(0, 0, 0, 0.9);
   z-index: 1000;
   padding: 40px;
-  cursor: pointer;
+}
+
+.modal-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+}
+
+.modal-image-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-content {
-  max-width: 90%;
+  max-width: 100%;
   max-height: 90vh;
-  margin: auto;
-  display: block;
   object-fit: contain;
 }
 
-.modal-caption {
-  color: white;
-  text-align: center;
-  padding: 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
+.modal-text-container {
+  flex: 1;
+  background: rgba(178, 231, 229, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  overflow-y: auto;
+  color: #333;
+  max-width: 400px;
 }
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0d3d35;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #0d3d35;
+  padding-bottom: 10px;
+}
+
+.modal-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.modal-details {
+  font-size: 14px;
+  color: #666;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(138, 102, 96, 0.699);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.modal-close:hover {
+  background: rgba(224, 105, 84, 0.63);
+}
+
+/*media queries for better modal mobile display */
+@media (max-width: 1024px) {
+  .modal-container {
+    flex-direction: column;
+  }
+
+  .modal-text-container {
+    max-width: 100%;
+    max-height: 30vh;
+  }
+
+  .modal-content {
+    max-height: 60vh;
+  }
+}
+
+/*might remove later idk*/
+@media (max-width: 768px) {
+  .gallery-modal {
+    padding: 20px;
+  }
+
+  .modal-content {
+    max-width: 95%;
+    max-height: 80vh;
+  }
+}
+/**/
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -109,9 +190,13 @@
     gap: 20px;
     padding: 15px;
   }
-  
+
   .gallery-title {
     font-size: 2rem;
+  }
+
+  .modal-title {
+    font-size: 20px;
   }
 }
 
@@ -121,13 +206,17 @@
     gap: 15px;
     padding: 10px;
   }
-  
+
   .gallery-title {
     font-size: 1.5rem;
   }
-  
+
   .gallery-caption {
     padding: 10px;
     font-size: 1rem;
+  }
+
+  .modal-container {
+    padding: 10px;
   }
 }

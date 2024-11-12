@@ -1,32 +1,43 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const modal = document.getElementById('imageModal');
-  const modalImg = document.getElementById('modalImage');
-  const modalCaption = document.getElementById('modalCaption');
-  const galleryItems = document.querySelectorAll('.gallery-item');
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("imageModal");
+  const galleryItems = document.querySelectorAll(".gallery-item");
+  const modalImg = modal.querySelector(".modal-content");
+  const modalTitle = modal.querySelector(".modal-title");
+  const modalDescription = modal.querySelector(".modal-description");
+  const modalDetails = modal.querySelector(".modal-details");
+  const closeButton = modal.querySelector(".modal-close");
 
-  // Open modal when clicking on gallery items
-  galleryItems.forEach(item => {
-      item.addEventListener('click', function() {
-          modal.style.display = "flex";
-          modalImg.src = this.querySelector('img').src;
-          modalCaption.textContent = this.querySelector('.gallery-caption').textContent;
-      });
-  });
+  galleryItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      modal.style.display = "block";
+      modalImg.src = this.querySelector("img").src;
 
-  // Close modal when clicking anywhere on it
-  modal.addEventListener('click', function() {
-      modal.style.display = "none";
-  });
-
-  // Prevent scrolling when modal is open
-  modal.addEventListener('wheel', function(e) {
-      e.preventDefault();
-  });
-
-  // Handle keyboard navigation
-  document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && modal.style.display === "flex") {
-          modal.style.display = "none";
+      // Get data from hidden div
+      const imageData = this.querySelector(".image-data");
+      if (imageData) {
+        modalTitle.textContent = imageData.querySelector("h2").textContent;
+        modalDescription.textContent = imageData.querySelector("p").textContent;
+        modalDetails.innerHTML = imageData.querySelector(".details").innerHTML;
       }
+    });
+  });
+
+  // Close modal when clicking the close button
+  closeButton.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  // Close modal when clicking outside the image
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Close modal with escape key
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.style.display === "block") {
+      modal.style.display = "none";
+    }
   });
 });

@@ -1,4 +1,3 @@
-
 .formsPageHeading {
   background: #0d3d35;
   color: #fff;
@@ -6,8 +5,9 @@
   padding-top: 20px;
   padding-bottom: 30px;
   margin-top: 0;
+  font-size: 1.5rem;
 }
-.body-section{
+.body-section {
   padding-top: 0;
   padding-bottom: 100px;
 }
@@ -24,52 +24,56 @@
 
 .form-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+  padding: 20px;
 }
 
 .form-item {
-  background: #f5f5f5;
-  border-radius: 8px;
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.pdf-thumbnail {
-  background: #fff;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.pdf-thumbnail img {
-  width: 100px;
-  height: 140px;
-  object-fit: cover;
+.form-content {
+  flex-grow: 1;
 }
 
 .form-title {
-  color: #333;
-  font-size: 16px;
-  margin: 10px 0;
+  color: #0d3d35;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-description {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .download-button {
   display: inline-block;
   background: #0d3d35;
   color: white;
-  padding: 8px 15px;
-  border-radius: 4px;
+  padding: 12px 24px;
+  border-radius: 6px;
   text-decoration: none;
+  font-size: 1rem;
   transition: background 0.3s ease;
+  text-align: center;
 }
 
 .download-button:hover {
@@ -79,12 +83,26 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .form-grid {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
+  }
+
+  .form-item {
+    height: auto;
+    min-height: 300px;
   }
 }
 
-@media (max-width: 480px) {  
+@media (max-width: 480px) {
+  .formsPageHeading {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
   .form-title {
-      font-size: 14px;
+    font-size: 1.25rem;
+  }
+
+  .form-description {
+    font-size: 0.9rem;
   }
 }
