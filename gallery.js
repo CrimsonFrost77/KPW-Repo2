@@ -6,11 +6,39 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalDescription = modal.querySelector(".modal-description");
   const modalDetails = modal.querySelector(".modal-details");
   const closeButton = modal.querySelector(".modal-close");
+  const prevBtn = modal.querySelector(".prev-btn");
+  const nextBtn = modal.querySelector(".next-btn");
+  const imageCounter = modal.querySelector(".image-counter");
+
+  let currentAlbum = [];
+  let currentIndex = 0;
 
   galleryItems.forEach((item) => {
     item.addEventListener("click", function () {
       modal.style.display = "block";
-      modalImg.src = this.querySelector("img").src;
+
+      // Check if this is an album
+      const albumImages = this.querySelector(".album-images");
+      if (albumImages) {
+        // Handle album view
+        currentAlbum = Array.from(albumImages.getElementsByTagName("img"));
+        currentIndex = 0;
+        showImage(currentIndex);
+
+        // Show navigation if multiple images
+        if (currentAlbum.length > 1) {
+          prevBtn.style.display = "block";
+          nextBtn.style.display = "block";
+          imageCounter.style.display = "block";
+        }
+      } else {
+        // Handle single image view
+        modalImg.src = this.querySelector("img").src;
+        currentAlbum = [];
+        prevBtn.style.display = "none";
+        nextBtn.style.display = "none";
+        imageCounter.style.display = "none";
+      }
 
       // Get data from hidden div
       const imageData = this.querySelector(".image-data");
@@ -22,22 +50,50 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Close modal when clicking the close button
+  function showImage(index) {
+    modalImg.src = currentAlbum[index].src;
+    updateImageCounter();
+  }
+
+  function updateImageCounter() {
+    if (currentAlbum.length > 0) {
+      imageCounter.textContent = `${currentIndex + 1} / ${currentAlbum.length}`;
+    }
+  }
+
+  // Navigation event listeners
+  prevBtn?.addEventListener("click", function (e) {
+    e.stopPropagation();
+    if (currentAlbum.length > 0) {
+      currentIndex =
+        (currentIndex - 1 + currentAlbum.length) % currentAlbum.length;
+      showImage(currentIndex);
+    }
+  });
+
+  nextBtn?.addEventListener("click", function (e) {
+    e.stopPropagation();
+    if (currentAlbum.length > 0) {
+      currentIndex = (currentIndex + 1) % currentAlbum.length;
+      showImage(currentIndex);
+    }
+  });
+
+  // Close modal handlers
   closeButton.addEventListener("click", function () {
     modal.style.display = "none";
   });
 
-  // Close modal when clicking outside the image
-  modal.addEventListener("click", function (e) {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-
-  // Close modal with escape key
+  // Keyboard navigation
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && modal.style.display === "block") {
-      modal.style.display = "none";
+    if (modal.style.display === "block") {
+      if (e.key === "Escape") {
+        modal.style.display = "none";
+      }
+      if (currentAlbum.length > 0) {
+        if (e.key === "ArrowLeft") prevBtn.click();
+        if (e.key === "ArrowRight") nextBtn.click();
+      }
     }
   });
 });
