@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   galleryItems.forEach((item) => {
     item.addEventListener("click", function () {
-      modal.style.display = "block";
+      modal.style.display = "flex";
+      toggleModalScrolling(true);
 
       // Check if this is an album
       const albumImages = this.querySelector(".album-images");
@@ -61,6 +62,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  function toggleModalScrolling(isOpen) {
+    if (isOpen) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+  }
+
   // Navigation event listeners
   prevBtn?.addEventListener("click", function (e) {
     e.stopPropagation();
@@ -82,11 +91,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // Close modal handlers
   closeButton.addEventListener("click", function () {
     modal.style.display = "none";
+    toggleModalScrolling(false);
   });
 
   // Keyboard navigation
   document.addEventListener("keydown", function (e) {
-    if (modal.style.display === "block") {
+    if (modal.style.display === "flex") {
       if (e.key === "Escape") {
         modal.style.display = "none";
       }
