@@ -192,15 +192,16 @@
   color: #666;
 }
 
+/* Update the .modal-close styles in gallery.css */
 .modal-close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: rgba(138, 102, 96, 0.699);
-  border: none;
+  position: fixed; /* Change from absolute to fixed */
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8); /* Made slightly more opaque */
+  border: 2px solid white;
   color: white;
-  width: 40px;
-  height: 40px;
+  width: 44px; /* Increased touch target size */
+  height: 44px; /* Increased touch target size */
   border-radius: 50%;
   cursor: pointer;
   font-size: 24px;
@@ -208,10 +209,23 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s;
+  z-index: 9999; /* Highest z-index */
+  padding: 0; /* Reset padding */
+  line-height: 1; /* Ensure proper centering of the × symbol */
+  touch-action: manipulation; /* Optimize for touch */
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on iOS */
 }
 
 .modal-close:hover {
   background: rgba(224, 105, 84, 0.63);
+}
+
+/* Add touch-specific styles */
+@media (hover: none) and (pointer: coarse) {
+  .modal-close {
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.9);
+  }
 }
 
 /*media queries for better modal mobile display */
@@ -313,6 +327,12 @@
     width: 35px;
     height: 35px;
     font-size: 20px;
+    background: rgba(
+      138,
+      102,
+      96,
+      0.9
+    ); /* Even more opaque for better visibility */
   }
 }
 
