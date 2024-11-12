@@ -28,7 +28,7 @@ const translations = {
     "assessment-branch": "Tax Assessment Branch",
     "tax-license-branch": "Tax Collection and License Branch",
     "market-collection-branch": "Market Collection Branch",
-    "engineering": "Civil/Electrical/Mechanical Branch",
+    engineering: "Civil/Electrical/Mechanical Branch",
     "health-family-planning": "Health and Family Planning Branch",
     "cleanliness-branch": "Cleanliness Branch",
 
@@ -60,11 +60,11 @@ const translations = {
     "license-inspector": "License Inspector",
     "assistant-tax-collector": "Assistant Tax Collector",
     "assistant-license-inspector": "Assistant License Inspector",
-    "treasurer": "Treasurer",
+    treasurer: "Treasurer",
     "accounts-assistant": "Accounts Assistant",
     "market-inspector": "Market Inspector",
-    "collector": "Collector",
-    "surveyor": "Surveyor/Sub-Overseer",
+    collector: "Collector",
+    surveyor: "Surveyor/Sub-Overseer",
     "work-assistant": "Work Assistant",
     "street-light-inspector": "Street Light Inspector",
     "road-roller-driver": "Road Roller Driver",
@@ -72,13 +72,13 @@ const translations = {
     "truck-driver": "Truck/Tractor Driver",
     "mixture-operator": "Mixture Machine Operator",
     "pump-operator": "Pump Operator",
-    "lineman": "Lineman",
+    lineman: "Lineman",
     "electrical-helper": "Electrical Helper",
     "health-assistant": "Health Assistant",
     "vaccination-supervisor": "Vaccination Supervisor",
-    "vaccinator": "Vaccinator",
+    vaccinator: "Vaccinator",
     "conservancy-inspector": "Conservancy Inspector",
-    "supervisor": "Supervisor",
+    supervisor: "Supervisor",
 
     // Employee Names
     "abdul-mottaleb": "Abdul Mottaleb",
@@ -109,7 +109,7 @@ const translations = {
     "khorshed-alam": "Khorshed Alam",
     "lucky-begum": "Mahmuda Begum (Lucky)",
     "mahmudul-hasan": "Md. Mahmudul Hasan",
-    "malek": "A. Malek",
+    malek: "A. Malek",
     "mamun-hossen": "Md. Mamun Hossen",
     "masud-rana": "Masud Rana",
     "masum-hossen": "Masum Hossen",
@@ -117,7 +117,7 @@ const translations = {
     "moktar-hossen": "Md. Moktar Hossen",
     "monser-ali": "Md. Monser Ali",
     "mosaraf-hossen": "Md. Mosaraf Hossen",
-    "mostofa": "Md. Mostofa",
+    mostofa: "Md. Mostofa",
     "nasir-uddin": "Nasir Uddin",
     "nasir-ul-hasan": "Md. Nasir Ul Hasan (Nannu)",
     "pavel-ahammed": "Pavel Ahammed",
@@ -132,7 +132,7 @@ const translations = {
     "sharmin-akter": "Sharmin Akter",
     "shilpi-akter": "Shilpi Akter",
     "sobur-molla": "Md. Abdus Sobur Molla",
-    "sohel": "Md. Sohel",
+    sohel: "Md. Sohel",
     "solayman-hossen": "Md. Solayman Hossen",
     "sourav-hossen": "Khondokar Sourav Hossen",
     "syed-asaduzzaman": "Syed Asaduzzaman",
@@ -167,7 +167,7 @@ const translations = {
     "info-total-wards-value": "09",
     "info-area-value": "28.02 sq. km",
     "info-population-value": "700,000",
-    "info-holdings-value": "19150",
+    "info-holdings-value": "19,150",
     "info-tax-collected-value": "Tk 5,12,42,483 and 78% of collection",
     "info-literacy-rate-value": "90.34%",
     "info-density-value": "25000 p/sq.km",
@@ -187,7 +187,17 @@ const translations = {
     "welcome-geography":
       "Geographically, Kaliakair is located at latitude 24.0750°N and longitude 90.2167°E. It is bordered by Mirzapur and Sakhipur upazilas to the north, Savar and Dhamrai upazilas to the south, Gazipur Sadar and Sreepur upazilas to the east, and Mirzapur upazila to the west.",
     "welcome-rivers":
-      "The primary rivers in the area are Turag, Bangshi, and Salda. Other notable water bodies include Boali, Hawla, Ujan, and Markaj beels, along with the Goala and Betjuri canals."
+      "The primary rivers in the area are Turag, Bangshi, and Salda. Other notable water bodies include Boali, Hawla, Ujan, and Markaj beels, along with the Goala and Betjuri canals.",
+    "about-p1":
+      "Kaliakair Municipality, established in 2003, stands as a testament to urban development in the Gazipur District. Our municipality has grown from its humble beginnings to become a vital center of commerce and community life.",
+    "about-p2":
+      "Located at a strategic point in Gazipur District, Kaliakair Municipality serves as an important hub connecting various major urban centers. The municipality's location has played a crucial role in its development as both a residential and commercial center.",
+    "about-p3":
+      "The jurisdiction of Kaliakair Municipality covers various important areas including residential zones, commercial districts, and industrial areas. Each ward has been carefully planned to ensure balanced development and efficient service delivery to all residents.",
+    "about-p4":
+      "Our municipality takes pride in its systematic approach to urban planning, with dedicated zones for commercial activities, residential areas, and industrial development. This planned development has helped maintain a balance between urban growth and environmental sustainability.",
+    "about-p5":
+      "The future development plans for Kaliakair Municipality focus on enhancing infrastructure, improving public services, and creating more green spaces for residents. These initiatives aim to make Kaliakair an even more livable and sustainable urban center.",
   },
   bn: {
     // Main Navigation
@@ -215,7 +225,7 @@ const translations = {
     "assessment-branch": "কর নির্ধারণ শাখা",
     "tax-license-branch": "কর আদায় ও লাইসেন্স শাখা",
     "market-collection-branch": "বাজার আদায় শাখা",
-    "engineering": "পূর্ত/বিদ্যুৎ/যান্ত্রিক শাখা",
+    engineering: "পূর্ত/বিদ্যুৎ/যান্ত্রিক শাখা",
     "health-family-planning": "স্বাস্থ্য পরিবার পরিকল্পনা শাখা",
     "cleanliness-branch": "পরিচ্ছন্ন শাখা",
 
@@ -247,11 +257,11 @@ const translations = {
     "license-inspector": "লাইসেন্স পরিদর্শক",
     "assistant-tax-collector": "সহকারী কর আদায়কারী",
     "assistant-license-inspector": "সহকারী লাইসেন্স পরিঃ",
-    "treasurer": "কোষাধ্যক্ষ",
+    treasurer: "কোষাধ্যক্ষ",
     "accounts-assistant": "হিসাব সহকারী",
     "market-inspector": "বাজার পরিদর্শক",
-    "collector": "আদায়কারী",
-    "surveyor": "সার্ভেয়ার/সাব ওভারশিয়ার",
+    collector: "আদায়কারী",
+    surveyor: "সার্ভেয়ার/সাব ওভারশিয়ার",
     "work-assistant": "কার্য-সহকারী",
     "street-light-inspector": "সড়ক বাতি পরিদর্শক",
     "road-roller-driver": "রোড রোলার চালক",
@@ -259,13 +269,13 @@ const translations = {
     "truck-driver": "ট্রাক/ট্রাক্টর চালক",
     "mixture-operator": "মিকচার মেশিন অপাঃ",
     "pump-operator": "পাম্প চারক",
-    "lineman": "লাইনম্যান",
+    lineman: "লাইনম্যান",
     "electrical-helper": "বিদ্যুৎ হেলপার",
     "health-assistant": "স্বাস্থ্য সহকারী",
     "vaccination-supervisor": "টিকাদান সুপারভাইজার",
-    "vaccinator": "টিকাদানকারী",
+    vaccinator: "টিকাদানকারী",
     "conservancy-inspector": "কঞ্জারভেন্সী ইন্সপেক্টর",
-    "supervisor": "সুপারভাইজার",
+    supervisor: "সুপারভাইজার",
 
     // Employee Names
     "abdul-mottaleb": "আব্দুল মোত্তালেব",
@@ -296,7 +306,7 @@ const translations = {
     "khorshed-alam": "খোরশেদ আলম",
     "lucky-begum": "মাহমুদা বেগম (লাকী)",
     "mahmudul-hasan": "মোঃ মাহমুদুল হাসান",
-    "malek": "আঃ মালেক",
+    malek: "আঃ মালেক",
     "mamun-hossen": "মোঃ মামুন হোসেন",
     "masud-rana": "মাসুদ রানা",
     "masum-hossen": "মাসুম হোসেন",
@@ -304,7 +314,7 @@ const translations = {
     "moktar-hossen": "মোঃ মোক্তার হোসেন",
     "monser-ali": "মোঃ মোনছের আলী",
     "mosaraf-hossen": "মোঃ মোশারফ হোসেন",
-    "mostofa": "মোঃ মোস্তফা",
+    mostofa: "মোঃ মোস্তফা",
     "nasir-uddin": "নাসির উদ্দিন",
     "nasir-ul-hasan": "মোঃ নাছির উল হাসান (নান্নু)",
     "pavel-ahammed": "পাভেল আহাম্মেদ",
@@ -319,7 +329,7 @@ const translations = {
     "sharmin-akter": "শারমিন আক্তার",
     "shilpi-akter": "শিল্পী আক্তার",
     "sobur-molla": "মোঃ আব্দুস ছবুর মোল্লা",
-    "sohel": "মোঃ সোহেল",
+    sohel: "মোঃ সোহেল",
     "solayman-hossen": "মোঃ সোলায়মান হোসেন",
     "sourav-hossen": "খন্দকার সৌরভ হোসেন",
     "syed-asaduzzaman": "সৈয়দ আসাদুজ্জামান",
@@ -354,7 +364,7 @@ const translations = {
     "info-total-wards-value": "০৯",
     "info-area-value": "২৮.০২ বর্গ কিমি",
     "info-population-value": "৭,০০,০০০",
-    "info-holdings-value": "১৯১৫০",
+    "info-holdings-value": "১৯,১৫০",
     "info-tax-collected-value": "টাকা ৫,১২,৪২,৪৮৩ এবং সংগ্রহের ৭৮%",
     "info-literacy-rate-value": "৯০.৩৪%",
     "info-density-value": "২৫০০০ জন/বর্গ কিমি",
@@ -369,10 +379,23 @@ const translations = {
 
     // Welcome content
     "welcome-title": "কালিয়াকৈর পৌরসভায় স্বাগতম",
-    "welcome-intro": "২০০৩ সালে প্রতিষ্ঠিত (২০০১ সালে ভিত্তি স্থাপন), কালিয়াকৈর পৌরসভা একটি এ শ্রেণির পৌরসভা হিসেবে নির্ধারিত, যা মোট ৯টি ওয়ার্ড নিয়ে গঠিত। ২৮.০২ বর্গ কিলোমিটার এলাকা জুড়ে বিস্তৃত এই পৌরসভায় প্রায় ৭,০০,০০০ জনসংখ্যা বসবাস করে এবং ১৯,১৫০টি হোল্ডিং রয়েছে।",
-    "welcome-geography": "ভৌগোলিকভাবে, কালিয়াকৈর ২৪.০৭৫০° উত্তর অক্ষাংশ এবং ৯০.২১৬৭° পূর্ব দ্রাঘিমাংশে অবস্থিত। এর উত্তরে মির্জাপুর ও শাখিপুর উপজেলা, দক্ষিণে সাভার ও ধামরাই উপজেলা, পূর্বে গাজীপুর সদর ও শ্রীপুর উপজেলা এবং পশ্চিমে মির্জাপুর উপজেলা দ্বারা সীমাবদ্ধ।",
-    "welcome-rivers": "এলাকার প্রধান নদীগুলি হল তুরাগ, বংশী এবং সলদা। অন্যান্য উল্লেখযোগ্য জলাশয়গুলির মধ্যে রয়েছে বোয়ালী, হাওলা, উজান এবং মারকাজ বিল, সেই সাথে গোয়ালা ও বেতজুড়ি খাল।"
-  }
+    "welcome-intro":
+      "২০০৩ সালে প্রতিষ্ঠিত (২০০১ সালে ভিত্তি স্থাপন), কালিয়াকৈর পৌরসভা একটি এ শ্রেণির পৌরসভা হিসেবে নির্ধারিত, যা মোট ৯টি ওয়ার্ড নিয়ে গঠিত। ২৮.০২ বর্গ কিলোমিটার এলাকা জুড়ে বিস্তৃত এই পৌরসভায় প্রায় ৭,০০,০০০ জনসংখ্যা বসবাস করে এবং ১৯,১৫০টি হোল্ডিং রয়েছে।",
+    "welcome-geography":
+      "ভৌগোলিকভাবে, কালিয়াকৈর ২৪.০৭৫০° উত্তর অক্ষাংশ এবং ৯০.২১৬৭° পূর্ব দ্রাঘিমাংশে অবস্থিত। এর উত্তরে মির্জাপুর ও শাখিপুর উপজেলা, দক্ষিণে সাভার ও ধামরাই উপজেলা, পূর্বে গাজীপুর সদর ও শ্রীপুর উপজেলা এবং পশ্চিমে মির্জাপুর উপজেলা দ্বারা সীমাবদ্ধ।",
+    "welcome-rivers":
+      "এলাকার প্রধান নদীগুলি হল তুরাগ, বংশী এবং সলদা। অন্যান্য উল্লেখযোগ্য জলাশয়গুলির মধ্যে রয়েছে বোয়ালী, হাওলা, উজান এবং মারকাজ বিল, সেই সাথে গোয়ালা ও বেতজুড়ি খাল।",
+    "about-p1":
+      "২০০৩ সালে প্রতিষ্ঠিত কালিয়াকৈর পৌরসভা গাজীপুর জেলার নগরায়ণের এক উদাহরণ হিসেবে দাঁড়িয়েছে। আমাদের পৌরসভা তার ক্ষুদ্র সূচনা থেকে বেড়ে উঠেছে এবং এখন বাণিজ্য ও সমাজ জীবনের একটি গুরুত্বপূর্ণ কেন্দ্র হয়ে উঠেছে।",
+    "about-p2":
+      "গাজীপুর জেলার একটি কৌশলগত স্থানে অবস্থিত কালিয়াকৈর পৌরসভা বিভিন্ন প্রধান শহর কেন্দ্রের সংযোগস্থল হিসেবে গুরুত্বপূর্ণ ভূমিকা পালন করে। পৌরসভার এই অবস্থানই এটিকে একটি আবাসিক ও বাণিজ্যিক কেন্দ্র হিসেবে উন্নতিতে গুরুত্বপূর্ণ ভূমিকা রেখেছে।",
+    "about-p3":
+      "কালিয়াকৈর পৌরসভার অধিক্ষেত্রে আবাসিক এলাকা, বাণিজ্যিক জেলা এবং শিল্পাঞ্চলসহ বিভিন্ন গুরুত্বপূর্ণ এলাকা অন্তর্ভুক্ত। প্রতিটি ওয়ার্ডকে সুষম উন্নয়ন এবং সকল বাসিন্দার কাছে কার্যকর সেবা প্রদান নিশ্চিত করার জন্য যত্নসহকারে পরিকল্পনা করা হয়েছে।",
+    "about-p4":
+      "আমাদের পৌরসভা নগর পরিকল্পনার প্রতি একটি সুসংগঠিত দৃষ্টিভঙ্গির জন্য গর্বিত, যেখানে বাণিজ্যিক কার্যক্রম, আবাসিক এলাকা এবং শিল্প উন্নয়নের জন্য নির্দিষ্ট অঞ্চল নির্ধারণ করা হয়েছে। এই পরিকল্পিত উন্নয়ন নগরায়ণ ও পরিবেশগত স্থিতিশীলতার মধ্যে ভারসাম্য রক্ষা করতে সহায়ক হয়েছে।",
+    "about-p5":
+      "ভবিষ্যতে কালিয়াকৈর পৌরসভার উন্নয়ন পরিকল্পনা অবকাঠামো উন্নয়ন, জনসেবা বৃদ্ধি, এবং বাসিন্দাদের জন্য আরও সবুজ এলাকা সৃষ্টির উপর কেন্দ্রিত। এই উদ্যোগগুলো কালিয়াকৈরকে আরও বাসযোগ্য এবং টেকসই একটি শহর কেন্দ্রে পরিণত করার লক্ষ্য নিয়েছে।",
+  },
 };
 
 /// Bangla number conversion mappings
