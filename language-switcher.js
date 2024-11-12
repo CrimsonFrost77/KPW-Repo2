@@ -188,6 +188,8 @@ const translations = {
       "Geographically, Kaliakair is located at latitude 24.0750°N and longitude 90.2167°E. It is bordered by Mirzapur and Sakhipur upazilas to the north, Savar and Dhamrai upazilas to the south, Gazipur Sadar and Sreepur upazilas to the east, and Mirzapur upazila to the west.",
     "welcome-rivers":
       "The primary rivers in the area are Turag, Bangshi, and Salda. Other notable water bodies include Boali, Hawla, Ujan, and Markaj beels, along with the Goala and Betjuri canals.",
+    //about content
+    "about-title": "About Kaliakair Municipality",
     "about-p1":
       "Kaliakair Municipality, established in 2003, stands as a testament to urban development in the Gazipur District. Our municipality has grown from its humble beginnings to become a vital center of commerce and community life.",
     "about-p2":
@@ -385,6 +387,8 @@ const translations = {
       "ভৌগোলিকভাবে, কালিয়াকৈর ২৪.০৭৫০° উত্তর অক্ষাংশ এবং ৯০.২১৬৭° পূর্ব দ্রাঘিমাংশে অবস্থিত। এর উত্তরে মির্জাপুর ও শাখিপুর উপজেলা, দক্ষিণে সাভার ও ধামরাই উপজেলা, পূর্বে গাজীপুর সদর ও শ্রীপুর উপজেলা এবং পশ্চিমে মির্জাপুর উপজেলা দ্বারা সীমাবদ্ধ।",
     "welcome-rivers":
       "এলাকার প্রধান নদীগুলি হল তুরাগ, বংশী এবং সলদা। অন্যান্য উল্লেখযোগ্য জলাশয়গুলির মধ্যে রয়েছে বোয়ালী, হাওলা, উজান এবং মারকাজ বিল, সেই সাথে গোয়ালা ও বেতজুড়ি খাল।",
+    //about content
+    "about-title": "কালিয়াকৈর পৌরসভা সম্পর্কে",
     "about-p1":
       "২০০৩ সালে প্রতিষ্ঠিত কালিয়াকৈর পৌরসভা গাজীপুর জেলার নগরায়ণের এক উদাহরণ হিসেবে দাঁড়িয়েছে। আমাদের পৌরসভা তার ক্ষুদ্র সূচনা থেকে বেড়ে উঠেছে এবং এখন বাণিজ্য ও সমাজ জীবনের একটি গুরুত্বপূর্ণ কেন্দ্র হয়ে উঠেছে।",
     "about-p2":
