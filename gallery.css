@@ -216,34 +216,45 @@
 
 /*media queries for better modal mobile display */
 @media (max-width: 1024px) {
-  .modal-container {
+  .modal-content-wrapper {
     flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .modal-image-section {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
   }
 
   .modal-text-container {
-    max-width: 100%;
+    width: 100%;
     max-height: 30vh;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 15px;
   }
 
   .modal-content {
     max-height: 60vh;
+    width: auto;
+    max-width: 100%;
+  }
+  .modal-nav {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .prev-btn {
+    left: 10px;
+  }
+
+  .next-btn {
+    right: 10px;
   }
 }
 
-/*might remove later idk*/
-@media (max-width: 768px) {
-  .gallery-modal {
-    padding: 20px;
-  }
-
-  .modal-content {
-    max-width: 95%;
-    max-height: 80vh;
-  }
-}
-/**/
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .gallery-grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -251,32 +262,195 @@
     padding: 15px;
   }
 
-  .gallery-title {
-    font-size: 2rem;
+  .gallery-modal {
+    padding: 20px;
+  }
+
+  .modal-content-wrapper {
+    padding: 10px;
+  }
+
+  .modal-image-section {
+    max-height: 50vh;
+  }
+
+  .modal-content {
+    max-height: 50vh;
+  }
+
+  .modal-text-container {
+    max-height: 40vh;
+    padding: 12px;
   }
 
   .modal-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .modal-description {
+    font-size: 14px;
+  }
+
+  .modal-details {
+    font-size: 13px;
+  }
+
+  .modal-nav {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .image-counter {
+    font-size: 12px;
+    padding: 6px 12px;
+    bottom: 10px;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
     font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  .modal-content-wrapper {
+    padding: 5px;
+  }
+
+  .modal-image-section {
+    max-height: 45vh;
+  }
+
+  .modal-content {
+    max-height: 45vh;
+  }
+
+  .modal-text-container {
+    max-height: 45vh;
+    padding: 10px;
+  }
+
+  .modal-title {
+    font-size: 18px;
+  }
+
+  .modal-description {
+    font-size: 13px;
+  }
+
+  .modal-details {
+    font-size: 12px;
+  }
+
+  .modal-nav {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .prev-btn {
+    left: 5px;
+  }
+
+  .next-btn {
+    right: 5px;
+  }
+
+  .image-counter {
+    font-size: 11px;
+    padding: 4px 10px;
+    bottom: 5px;
+  }
+
+  .modal-close {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+}
+/* Handle very tall screens */
+@media (min-height: 1000px) {
+  .modal-image-section {
+    max-height: 70vh;
+  }
+
+  .modal-content {
+    max-height: 70vh;
+  }
+
+  .modal-text-container {
+    max-height: 20vh;
+  }
+}
+
+/* Handle landscape orientation on mobile */
+@media (max-width: 896px) and (orientation: landscape) {
+  .modal-content-wrapper {
+    flex-direction: row;
     gap: 15px;
-    padding: 10px;
   }
 
-  .gallery-title {
-    font-size: 1.5rem;
+  .modal-image-section {
+    max-height: 80vh;
+    flex: 2;
   }
 
-  .gallery-caption {
-    padding: 10px;
-    font-size: 1rem;
+  .modal-content {
+    max-height: 80vh;
   }
 
-  .modal-container {
-    padding: 10px;
+  .modal-text-container {
+    flex: 1;
+    max-height: 80vh;
+    margin-top: 0;
+    max-width: 300px;
   }
+
+  .modal-nav {
+    padding: 8px;
+  }
+}
+
+/* Handle touch devices */
+@media (hover: none) {
+  .modal-nav {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+
+  .modal-close {
+    opacity: 1;
+  }
+}
+
+/* Prevent content shift when modal opens on mobile */
+body.modal-open {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Ensure smooth scrolling in modal text container */
+.modal-text-container {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+/* Custom scrollbar for modal text */
+.modal-text-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-text-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-text-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
 }
