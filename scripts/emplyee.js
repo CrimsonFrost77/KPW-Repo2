@@ -1292,7 +1292,10 @@ const employeeTable = [
   },
 ];
 
+//empty string to store the html
 let html = "";
+
+//loop through the employeeTable array and create the html for each department
 employeeTable.forEach((element, index) => {
   html += `
         <div class="department">
@@ -1314,6 +1317,7 @@ employeeTable.forEach((element, index) => {
             </thead>
             <tbody>
           `;
+  //loop through the employees array and create the html for each employee
   element.employees.forEach((employee) => {
     html += `
               <tr>
@@ -1333,6 +1337,7 @@ employeeTable.forEach((element, index) => {
               </tr>
             `;
   });
+  //close the table and department div
   html += `
             </tbody>
           </table>
@@ -1340,4 +1345,5 @@ employeeTable.forEach((element, index) => {
       `;
 });
 
+//add the html to the table container
 tableContainer.innerHTML = html;
