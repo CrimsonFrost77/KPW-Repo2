@@ -1292,8 +1292,13 @@ const employeeTable = [
   },
 ];
 
-//empty string to store the html
-let html = "";
+//string with header to store the html
+let html = `<h1
+        id="kaliakair-municipality-employee-list"
+        data-translate="employee-list-title"
+      >
+        Kaliakair Municipality Employee List
+      </h1>`;
 
 //loop through the employeeTable array and create the html for each department
 employeeTable.forEach((element, index) => {
