@@ -1352,4 +1352,3 @@ employeeTable.forEach((element, index) => {
 
 //add the html to the table container
 tableContainer.innerHTML = html;
-//gfhfh
