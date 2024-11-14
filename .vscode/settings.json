@@ -19,5 +19,8 @@
     "titleBar.inactiveBackground": "#74a51299",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "#74a512"
+  "peacock.color": "#74a512",
+  "cSpell.words": [
+    "Mahmuda"
+  ]
 }
