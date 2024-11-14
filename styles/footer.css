@@ -53,8 +53,18 @@
 }
 
 .footer-bottom img {
-  height: 30px;
-  margin: 5px;
+  height: 40px;
+  margin: 10px;
+}
+
+.footer-bottom2 img{
+  height: 15px;
+  margin: 10px;
+}
+
+.footer-bottom3 img{
+  height: 70px;
+  margin: 10px;
 }
 
 /* target footer when it's within the same page as employee-table-container */
